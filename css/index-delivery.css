@@ -1,0 +1,52 @@
+@import url(./03-products.css);
+@import url(./02-filters.css);
+@import url(./01-header.css);
+@import url(./../fonts/DINPro.css);
+
+:root {
+  --other-color: #EF786F;
+  --border-color: #E3E3E3;
+  --disactive-color: #C6C6C6;
+  --font-family: "DINPro", Arial, Helvetica, sans-serif;
+  --font-light: 200;
+  --font-regular: 400;
+  --font-medium: 600;
+  --font-bold: 700;
+  --font-black: 800;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.center {
+  max-width: 1820px;
+  margin: 0px auto;
+}
+
+@media (max-width: 1820px) {
+  .center {
+    padding: 0px 20px;
+  }
+}
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/DeliveryNew/banner.jpg);
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+}
+
+main {}

@@ -1,0 +1,106 @@
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+}
+
+.header-top {
+
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.header-change-color {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0px 30px 0px;
+}
+
+/* ! ---Смена цветов у шапки НАЧАЛО---*/
+header:hover .header-top {
+  background: #fff;
+}
+
+header:hover .text-box svg rect {
+  stroke: black;
+}
+
+header:hover .text {
+  color: black;
+}
+
+header:hover .svg-logo path {
+  fill: #000000;
+}
+
+header:hover .svg-icons path {
+  stroke: #000000;
+}
+
+header:hover .svg-basket path {
+  fill: #000000
+}
+
+/* ! ---Смена цветов у шапки КОНЕЦ---*/
+
+
+.header-element {
+  width: 30%;
+}
+
+.choice-regiones-box {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+}
+
+.text-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.text-box svg {
+  display: block;
+}
+
+.text {
+  font-weight: var(--font-regular);
+  color: #fff;
+}
+
+.logo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-box svg {
+  display: block;
+}
+
+.icons-box {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 30px;
+}
+
+.icons-box svg {
+  display: block;
+}
+
+.header-catalog-name {
+  font-weight: var(--font-medium);
+  font-size: 40px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 0px 0px 42px 0px;
+}
