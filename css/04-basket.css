@@ -1,0 +1,51 @@
+.basket-field-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 200;
+  top: 0px;
+
+
+}
+
+.basket-field {
+  position: relative;
+  right: 0px;
+  width: 35%;
+  height: 100vh;
+  background: #fff;
+
+}
+
+.basket-close {}
+
+.basket-header {}
+
+.basket-title {}
+
+.basket-button-reset {}
+
+.product-field {}
+
+.product-item {}
+
+.product-img {}
+
+.product-title {}
+
+.product__quantity-cost {}
+
+.count-container {}
+
+.disactive {}
+
+.button-count {}
+
+.minus {}
+
+.count {}
+
+.plus {}
+
+.product-cost {}

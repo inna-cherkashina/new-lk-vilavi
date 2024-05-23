@@ -9,6 +9,10 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .product-img {
@@ -88,8 +92,12 @@
   fill: var(--other-color);
 }
 
-.count {
+.count input {
   font-size: 14px;
+  background: #fff;
+  border: none;
+  width: 20px;
+  text-align: center;
 }
 
 .plus:hover svg circle {

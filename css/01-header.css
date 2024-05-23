@@ -6,7 +6,6 @@
 }
 
 .header-top {
-
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -104,3 +103,80 @@ header:hover .svg-basket path {
   text-align: center;
   padding: 0px 0px 42px 0px;
 }
+
+/* !---Выезжающий хедер НАЧАЛО--- */
+.header-move {
+  z-index: 100;
+  width: 100%;
+  background: #ffffff;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+ .header-move__hidden {
+  top: -120px;
+  position: absolute;
+}
+
+.header-move__visible {
+  top: 0px;
+  position: fixed;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.header-move .text {
+  color: #000000;
+}
+/*  .scroll-block {
+  cursor: pointer;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #bcbcff;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  color: #bcbcff;
+  -webkit-animation: .3s scroll_visible;
+  animation: .3s scroll_visible
+}
+
+
+
+.hidden {
+  bottom: -300px;
+  -webkit-animation: .3s scroll_hidden;
+  animation: .3s scroll_hidden
+}
+
+@-webkit-keyframes scroll_visible {
+  from {
+    bottom: -300px
+  }
+}
+
+@keyframes scroll_visible {
+  from {
+    bottom: -300px
+  }
+}
+
+@-webkit-keyframes scroll_hidden {
+  from {
+    bottom: 20px
+  }
+}
+
+@keyframes scroll_hidden {
+  from {
+    bottom: 20px
+  }
+} */
+/* !---Выезжающий хедер КОНЕЦ--- */
