@@ -37,6 +37,11 @@ ul {
   margin: 0px auto;
 }
 
+.center-popup {
+  max-width: 584px;
+  margin: 0px auto;
+}
+
 @media (max-width: 1820px) {
   .center {
     padding: 0px 20px;

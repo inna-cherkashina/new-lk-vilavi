@@ -483,36 +483,63 @@
 
     <section class="basket-field-container">
       <div class="basket-field">
-        <div class="basket-close">х</div>
-        <div class="basket-header">
-          <div class="basket-title">корзина/ 2шт.</div>
-          <div class="basket-button-reset">Очистить всё</div>
-        </div>
-        <ul class="product-field">
-          <li class="product-item">
-            <img src="" alt="" class="product-img">
-            <div class="product-title"></div>
-            <div class="product__quantity-cost">
-              <div class="count-container disactive" data-count>
-                <div class="button-count minus">
-                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="15" cy="15" r="15" fill="#E3E3E3" />
-                    <path d="M11 15H19" stroke="black" stroke-width="1.7" stroke-linecap="round" />
-                  </svg>
+        <div class="center-popup">
+          <div class="basket-close">
+            <svg class="close-img" width="13" height="13" viewBox="0 0 13 13" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12.728 1.58517C13.0907 1.22254 13.0907 0.634602 12.728 0.271972C12.3654 -0.0906574 11.7775 -0.0906574 11.4148 0.271972L6.5 5.1868L1.58517 0.271972C1.22254 -0.0906574 0.634602 -0.0906574 0.271972 0.271972C-0.0906574 0.634602 -0.0906574 1.22254 0.271972 1.58517L5.1868 6.5L0.271972 11.4148C-0.0906574 11.7775 -0.0906574 12.3654 0.271972 12.728C0.634602 13.0907 1.22254 13.0907 1.58517 12.728L6.5 7.8132L11.4148 12.728C11.7775 13.0907 12.3654 13.0907 12.728 12.728C13.0907 12.3654 13.0907 11.7775 12.728 11.4148L7.8132 6.5L12.728 1.58517Z"
+                fill="#201D1D" />
+            </svg>
+          </div>
+          <div class="basket-header">
+            <div class="basket-title">корзина/ <span>2шт.</span></div>
+            <div class="basket-button-reset">Очистить всё</div>
+          </div>
+          <ul class="product-field">
+            <li class="basket-product-item">
+              <img src="./images/DeliveryNew/products/prod-1.png" alt="продукт" class="basket-product-img">
+              <div class="product-title">STЁKLA CRYSTAL</div>
+              <div class="product__quantity-cost">
+                <div class="count-container" data-count>
+                  <div class="button-count minus">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="15" cy="15" r="15" fill="#E3E3E3" />
+                      <path d="M11 15H19" stroke="black" stroke-width="1.7" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                  <div class="count"><input type="text" disabled value="1"></div>
+                  <div class="button-count plus">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="15" cy="15" r="15" fill="#E3E3E3" />
+                      <path d="M11 15H19" stroke="black" stroke-width="1.7" stroke-linecap="round" />
+                      <path d="M15 11L15 19" stroke="black" stroke-width="1.7" stroke-linecap="round" />
+                    </svg>
+                  </div>
                 </div>
-                <div class="count"><input type="text" disabled value="1"></div>
-                <div class="button-count plus">
-                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="15" cy="15" r="15" fill="#E3E3E3" />
-                    <path d="M11 15H19" stroke="black" stroke-width="1.7" stroke-linecap="round" />
-                    <path d="M15 11L15 19" stroke="black" stroke-width="1.7" stroke-linecap="round" />
-                  </svg>
+                <div class="product-cost"></div>
+              </div>
+            </li>
+          </ul>
+          <div class="basket-footer">
+            <div class="order-sum">
+              <div class="order-title">сумма заказа</div>
+              <div class="order-delivery">Доставка: <span>Сегодня</span></div>
+              <div class="order-cost-products">
+                <div class="order-cost-text"></div>
+                <div class="order-dotes"></div>
+                <div class="order-cost-sum">4 990 ₽</div>
+                <div class="order-finish">
+                  <div>итого</div>
+                  <div>4 990 ₽</div>
                 </div>
               </div>
-              <div class="product-cost"></div>
+
             </div>
-          </li>
-        </ul>
+            <div class="button-order">Оформить заказ</div>
+          </div>
+        </div>
+
       </div>
     </section>
   </main>
