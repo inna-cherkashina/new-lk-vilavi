@@ -5,92 +5,202 @@
   background: rgba(0, 0, 0, 0.5);
   z-index: 200;
   top: 0px;
-  display: flex;
   justify-content: flex-end;
+}
 
+.basket-container__active {
+  display: flex;
+}
+
+.basket-container__disactive {
+  display: none;
 }
 
 .basket-field {
   position: relative;
+  overflow-y: auto;
   right: 0px;
   width: 685px;
   height: 100vh;
   background: #fff;
-
 }
 
 .basket-close {
+  cursor: pointer;
   margin: 50px 0px 0px 0px;
   text-align: right;
-
 }
 
 .basket-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 60px 0px 0px 0px;
+  margin: 50px 0px 0px 0px;
 }
 
 .basket-title {
-  font-size: 24px;
-  font-weight: var(--font-medium);
+  font-size: var(--fsz-medium-plus);
+  font-weight: var(--fw-medium);
 }
 
 .basket-title span {
-  font-size: 14px;
-  font-weight: var(--font-regular);
+  font-size: var(--fsz-little);
+  font-weight: var(--fw-regular);
 }
 
-.basket-button-reset {}
+.basket-button-reset {
+  cursor: pointer;
+}
 
-.product-field {}
+.product-field {
+  margin: 35px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
 
 .basket-product-item {
   display: flex;
-
 }
 
 .basket-product-img {
   width: 167px;
   height: 167px;
+  margin: 0px 30px 0px 0px;
 }
 
-.product-title {
-  font-size: 24px;
-  font-weight: var(--font-medium);
+.basket-product-title {
+  font-size: var(--fsz-medium);
+  font-weight: var(--fw-medium);
+  margin: 46px 0px 0px 0px;
+  flex-grow: 1;
 }
 
-.product__quantity-cost {}
+.product__quantity-cost {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 23px;
+}
 
-.count-container {}
+.basket-count-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 46px 0px 0px 0px;
+}
 
-.disactive {}
+.basket-count input {
+  font-size: var(--fsz-little);
+  background: #fff;
+  border: none;
+  width: 20px;
+  text-align: center;
+}
 
-.button-count {}
+.product-cost {
+  cursor: pointer;
+}
 
-.minus {}
+.basket-plus svg circle {
+  cursor: pointer;
+  transition: 0.3s ease all;
+  -webkit-transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -ms-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+}
 
-.count {}
+.basket-minus svg circle {
+  cursor: pointer;
+  transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  -webkit-transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -ms-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+}
 
-.plus {}
+.basket-plus:hover svg circle,
+.basket-minus:hover svg circle {
+  fill: var(--other-color);
+}
 
-.product-cost {}
+.product-close {
+  cursor: pointer;
+}
 
-.basket-footer {}
+.basket-footer {
+  margin: 54px 0px 0px 0px;
+}
 
 .order-sum {}
 
-.button-order {
+.order-title {
+  font-size: var(--fsz-medium);
+  font-weight: var(--fw-medium);
 
+}
+
+.order-delivery {
+  font-size: var(--fsz-little);
+  font-weight: var(--fw-medium);
+  margin: 22px 0px 0px 0px;
+}
+
+.order-delivery span {
+  color: var(--other-color);
+}
+
+.order-cost-products {
+  display: flex;
+  margin: 18px 0px 0px 0px;
+}
+
+.order-cost-text {
+  font-size: var(--fsz-little-plus);
+  font-weight: var(--fw-regular);
+}
+
+.order-dotes {
+  flex-grow: 1;
+  border-bottom: 1px dotted black;
+}
+
+.order-cost-sum {
+  font-size: var(--fsz-little-plus);
+  font-weight: var(--fw-medium);
+}
+
+.order-finish {
+  margin: 20px 0px 0px 0px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.order-finish__text {
+  font-size: var(--fsz-little-plus);
+  font-weight: var(--fw-medium);
+}
+
+.order-finish__cost-resalt {
+  font-size: var(--fsz-medium);
+  font-weight: var(--fw-medium);
+}
+
+.button-order {
+  cursor: pointer;
+  margin: 65px 0px 0px 0px;
   padding: 15px 0px 18px 0px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-size: 16px;
-  font-weight: var(--font-medium);
+  font-size: var(--fsz-little-plus);
+  font-weight: var(--fw-medium);
   background: var(--other-color);
   border-radius: 10px;
   -webkit-border-radius: 10px;

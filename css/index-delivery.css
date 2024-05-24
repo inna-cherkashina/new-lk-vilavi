@@ -8,19 +8,24 @@
   --other-color: #EF786F;
   --border-color: #E3E3E3;
   --disactive-color: #C6C6C6;
-  --font-family: "DINPro", Arial, Helvetica, sans-serif;
-  --font-light: 200;
-  --font-regular: 400;
-  --font-medium: 600;
-  --font-bold: 700;
-  --font-black: 800;
+  --fw-family: "DINPro", Arial, Helvetica, sans-serif;
+  --fw-light: 200;
+  --fw-regular: 400;
+  --fw-medium: 600;
+  --fw-bold: 700;
+  --fw-black: 800;
+  --fsz-little: 14px;
+  --fsz-little-plus: 16px;
+  --fsz-medium: 24px;
+  --fsz-medium-plus: 34px;
+
 }
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: var(--font-family);
+  font-family: var(--fw-family);
 }
 
 a {
@@ -55,4 +60,10 @@ header {
   background-size: cover;
 }
 
-main {}
+.scroll-disactive {
+  overflow-y: hidden;
+}
+
+.scroll-active {
+  overflow-y: auto;
+}

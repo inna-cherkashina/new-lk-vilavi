@@ -1,7 +1,7 @@
 let basketCards = document.querySelectorAll('.basket-container');
 let countContainers = document.querySelectorAll('[data-count]');
 
-//! Открытие счётчика
+//! Открытие счётчика START
 basketCards.forEach(function (basket, B) {
   basket.addEventListener('click', function (e) {
 
@@ -36,9 +36,9 @@ countContainers.forEach(function (countContainer) {
 
   })
 });
+//! Открытие счётчика FINISH
 
-//! Появление шапки при скролле страницы
-
+//! Появление шапки при скролле страницы START
 let header = document.querySelector('.header-move');
 
 window.addEventListener('scroll', function () {
@@ -51,5 +51,27 @@ window.addEventListener('scroll', function () {
     header.classList.add('header-move__hidden');
   }
 });
+//! Появление шапки при скролле страницы FINISH
 
-//! Открытие блока с корзиной товара
+//! Открытие блока с корзиной товара START
+let basketCLose = document.querySelector('.basket-close');
+let basketContainer = document.querySelector('.basket-field-container');
+let basketOpen = document.querySelectorAll('.icons-box svg');
+let bodyPage = document.querySelector('body');
+
+basketOpen.forEach(function (basket) {
+  basket.addEventListener('click', function (e) {
+    e.preventDefault();
+    basketContainer.classList.remove('basket-container__disactive');
+    basketContainer.classList.add('basket-container__active');
+    bodyPage.classList.add('scroll-disactive');
+  })
+})
+basketCLose.addEventListener('click', function (e) {
+  e.preventDefault();
+  basketContainer.classList.add('basket-container__disactive');
+  basketContainer.classList.remove('basket-container__active');
+  bodyPage.classList.remove('scroll-disactive');
+})
+
+//! Открытие блока с корзиной товара FINISH

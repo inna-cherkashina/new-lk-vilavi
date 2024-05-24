@@ -22,13 +22,13 @@
 
 .product-title {
   font-size: 25px;
-  font-weight: var(--font-medium);
+  font-weight: var(--fw-medium);
   margin: 0px 0px 24px 0px;
 }
 
 .product-cost {
-  font-size: 24px;
-  font-weight: var(--font-medium);
+  font-size: var(--fsz-medium);
+  font-weight: var(--fw-medium);
   margin: 0px 0px 15px 0px;
 }
 
@@ -37,13 +37,13 @@
 }
 
 .product-delivery {
-  font-size: 14px;
-  font-weight: var(--font-medium);
+  font-size: var(--fsz-little);
+  font-weight: var(--fw-medium);
 }
 
 .delivery-resalt {
-  font-size: 14px;
-  font-weight: var(--font-medium);
+  font-size: var(--fsz-little);
+  font-weight: var(--fw-medium);
   color: var(--other-color);
 }
 
@@ -83,17 +83,24 @@
 
 .active {}
 
-.minus,
-.plus {
+.minus svg circle,
+.plus svg circle {
   cursor: pointer;
+  transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  -webkit-transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -ms-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
 }
 
 .minus:hover svg circle {
   fill: var(--other-color);
+
 }
 
 .count input {
-  font-size: 14px;
+  font-size: var(--fsz-little);
   background: #fff;
   border: none;
   width: 20px;

@@ -71,7 +71,7 @@ header:hover .svg-basket path {
 }
 
 .text {
-  font-weight: var(--font-regular);
+  font-weight: var(--fw-regular);
   color: #fff;
 }
 
@@ -93,11 +93,13 @@ header:hover .svg-basket path {
 }
 
 .icons-box svg {
+  cursor: pointer;
   display: block;
+
 }
 
 .header-catalog-name {
-  font-weight: var(--font-medium);
+  font-weight: var(--fw-medium);
   font-size: 40px;
   color: #FFFFFF;
   text-align: center;
@@ -116,7 +118,7 @@ header:hover .svg-basket path {
   -o-transition: all 0.3s ease;
 }
 
- .header-move__hidden {
+.header-move__hidden {
   top: -120px;
   position: absolute;
 }
@@ -130,6 +132,7 @@ header:hover .svg-basket path {
 .header-move .text {
   color: #000000;
 }
+
 /*  .scroll-block {
   cursor: pointer;
   position: fixed;
