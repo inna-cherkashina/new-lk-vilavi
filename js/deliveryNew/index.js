@@ -75,3 +75,4 @@ basketCLose.addEventListener('click', function (e) {
 })
 
 //! Открытие блока с корзиной товара FINISH
+

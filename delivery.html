@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Главная с продуктами</title>
+  <title>Оформление доставки</title>
   <link rel="stylesheet" href="./css/index-delivery.css">
 
 </head>
 
 <body>
-  <header>
+  <header class="header-delivery__container">
     <div class="header-delivery">
       <a class="icon__leave-page">
         <svg width="34" height="26" viewBox="0 0 34 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -40,9 +40,112 @@
 
   <main>
     <div class="center-delivery ">
-      <div class="delivery-container">
-        <div class="delivery-info-container">sdfgsdfgsdfg</div>
-        <div class="delivery-order-container">
+      <div class="delivery__container">
+        <div class="delivery-info__container">
+          <!-- ! Адрес и доставка START-->
+          <div class="delivery-address__container">
+            <div class="delivery-address__title">
+              <div class="adress-title-item">1/3</div>
+              <div class="adress-title-text">адрес и доставка</div>
+              <div class="adress-title-open">
+                <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 10L19 1" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M1 1L10 10" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+            <div class="delivery-method__container">
+              <div class="delivery-method__text">Способ доставки</div>
+              <div class="delivery-method__options">
+                <div class="method-option">
+                  <p>курьер</p>
+                  <p>Курьерская<br> доставка</p>
+                  <p>от 130 ₽</p>
+                </div>
+                <div class="method-option">
+                  <p>самовывоз</p>
+                  <p>Самовывоз<br> ФРЗ, ПВЗ</p>
+                  <p>от 0 ₽</p>
+                </div>
+              </div>
+            </div>
+            <div class="place-of-order__container">
+              <div class="place-of-order__text">пункт выдачи</div>
+              <div class="place-of-order__options">
+                <div class="place-of-order__title">
+                  VILAVI
+                </div>
+                <div class="place-of-order__adress">
+                  <p>Кошурникова ул д.5<br>
+                    м. Берёзовая роща</p>
+                  <p>стоимость — бесплатно</p>
+                </div>
+                <div class="place-of-order__button">
+                  Выбрать другой
+                </div>
+              </div>
+            </div>
+            <div class="delivery-data__container">
+              <div class="delivery-data__text">дата доставки</div>
+              <div class="delivery-data__options">
+                <div class="delivery-data__title">
+                  Сегодня
+                </div>
+                <div class="delivery-data-sum__options">
+                  <p class="data-sum__data">Заберите заказ с 16 по 18 мая включительно.</p>
+                  <div class="data-sum__container">
+                    <p>сумма заказа</p>
+                    <p class="data-sum__dot"></p>
+                    <p>4 990 ₽</p>
+                  </div>
+                  <div class="data-sum__container">
+                    <p>доставка</p>
+                    <p class="data-sum__dot"></p>
+                    <p>бесплатно</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ! Адрес и доставка FINISH-->
+
+          <!-- ! Получатель START-->
+          <div class="recipient-details__container">
+            <div class="recipient-details__title">
+              <div class="recipient-title-item">2/3</div>
+              <div class="recipient-title-text">получатель</div>
+              <div class="recipient-title-open">
+                <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 10L19 1" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M1 1L10 10" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+            <div class="recipient-form__container">
+              <div class="recipient-form__text">ваши данные</div>
+              <div class="recipient-form__options">
+                <form class="form-option" action="#" method="post">
+                  <input class="form-option__input" type="text" name="name" id="name" required placeholder="Имя" />
+                  <input class="form-option__input" type="text" name="surname" id="surname" required
+                    placeholder="Фамилия" />
+                  <input class="form-option__input" type="number" name="phone" id="phone" value="" placeholder="11234134" />
+                  <input class="form-option__input" type="email" name="email" id="email" required placeholder="ex@mail.ru" />
+                </form>
+
+              </div>
+            </div>
+
+          </div>
+          <!-- ! Получатель FINISH-->
+
+          <div class="delivery-payment__container"></div>
+        </div>
+
+        <!--! Блок с суммой заказа и картинками товаров START-->
+        <div class="delivery-order__container">
           <div class="your-order">
             <div class="your-order-header">
               <div class="your-order-title">Ваш заказ / <span>2шт</span></div>
@@ -73,7 +176,7 @@
           </div>
           <div class="order-button">Название способа оплаты</div>
         </div>
-
+        <!--! Блок с суммой заказа и картинками товаров FINISH-->
       </div>
 
     </div>

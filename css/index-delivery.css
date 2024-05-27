@@ -15,10 +15,12 @@
   --fw-medium: 600;
   --fw-bold: 700;
   --fw-black: 800;
+  --fsz-mini: 12px;
   --fsz-little: 14px;
   --fsz-little-plus: 16px;
   --fsz-medium: 24px;
   --fsz-medium-plus: 34px;
+  --fsz-medium-big: 40px;
 
 }
 
@@ -60,9 +62,7 @@ ul {
 }
 
 header {
-  /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/DeliveryNew/banner.jpg); */
   width: 100%;
-  height: 300px;
   background-size: cover;
 }
 
