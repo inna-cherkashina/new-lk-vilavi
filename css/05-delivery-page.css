@@ -34,7 +34,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin: 98px 0px 0px 0px;
+  margin: 98px 0px 98px 0px;
 }
 
 
@@ -56,7 +56,8 @@
 }
 
 .delivery-address__title,
-.recipient-details__title {
+.recipient-details__title,
+.delivery-payment__title {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -65,29 +66,34 @@
 .adress-title-item,
 .adress-title-text,
 .recipient-title-item,
-.recipient-title-text {
+.recipient-title-text,
+.delivery-payment-item,
+.delivery-payment-text {
   font-size: var(--fsz-medium-big);
   font-weight: var(--fw-medium);
 }
 
 .adress-title-item,
-.recipient-title-item {
-  background: #ffdfdf;
+.recipient-title-item,
+.delivery-payment-item {
+  /* background: #ffdfdf; */
   width: 215px;
   text-align: end;
 }
 
 .adress-title-text,
-.recipient-title-text {
-  background: #ffa0a0;
+.recipient-title-text,
+.delivery-payment-text {
+  /* background: #ffa0a0; */
   width: 600px;
   padding: 0px 0px 0px 150px;
 
 }
 
 .adress-title-open,
-.recipient-title-open {
-  background: #def197;
+.recipient-title-open,
+.delivery-payment-open {
+  /* background: #def197; */
 }
 
 .delivery-method__container,
@@ -99,7 +105,7 @@
 
 .delivery-method__text,
 .recipient-form__text {
-  background: #ffdfdf;
+  /* background: #ffdfdf; */
   width: 215px;
   text-align: end;
   font-size: var(--fsz-medium);
@@ -107,7 +113,7 @@
 }
 
 .delivery-method__options {
-  background: #ffa0a0;
+  /* background: #ffa0a0; */
   width: 620px;
   padding: 0px 0px 0px 150px;
   display: flex;
@@ -147,7 +153,7 @@
 }
 
 .place-of-order__text {
-  background: #ffdfdf;
+  /* background: #ffdfdf; */
   width: 215px;
   text-align: end;
   font-size: var(--fsz-medium);
@@ -155,7 +161,7 @@
 }
 
 .place-of-order__options {
-  background: #ffa0a0;
+  /* background: #ffa0a0; */
   width: 620px;
   padding: 0px 0px 0px 150px;
   display: flex;
@@ -197,7 +203,7 @@
 }
 
 .delivery-data__text {
-  background: #ffdfdf;
+  /* background: #ffdfdf; */
   width: 215px;
   text-align: end;
   font-size: var(--fsz-medium);
@@ -205,7 +211,7 @@
 }
 
 .delivery-data__options {
-  background: #ffa0a0;
+  /* background: #ffa0a0; */
   width: 620px;
   padding: 0px 0px 0px 150px;
   display: flex;
@@ -242,7 +248,7 @@
 
 /*! =============================== */
 .recipient-form__options {
-  background: #ffa0a0;
+  /* background: #ffa0a0; */
   width: 620px;
   padding: 0px 0px 0px 150px;
   display: flex;
@@ -265,17 +271,124 @@
   outline: none;
 }
 
+.i-agree__container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 35px 0px 0px 0px;
+}
+
+.i-agree {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 15px;
+}
+
+.i-agree__checkbox {
+  cursor: pointer;
+  width: 25px;
+  height: 16px;
+
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
+.checkbox-active {
+  background: var(--other-color);
+}
+
+.checkbox-disactive {
+  background: #fff;
+  border: 1px solid #000;
+}
+
+.i-agree__text {
+  width: 343px;
+  font-size: var(--fsz-mini);
+  font-weight: var(--fw-regular);
+}
+
+.i-agree__text a {
+  color: #000;
+  text-decoration: underline;
+}
+
 /*! =============================== */
 
-.delivery-payment__container {}
+.delivery-payment__container {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.variant-bank__empty-box {
+  width: 215px;
+
+}
+
+.delivery-variant-bank__container {
+  display: flex;
+}
+
+.variant-bank__options {
+  width: 620px;
+  padding: 0px 0px 0px 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.delivery-payment__variant-bank {
+  cursor: pointer;
+  border-bottom: 1px solid var(--border-color);
+  padding: 25px 0px 25px 0px;
+}
+
+.i-agree-variant-bank {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 15px;
+}
+
+.i-agree-variant-bank__text {
+  font-size: var(--fsz-little-plus);
+  font-weight: var(--fw-medium);
+}
+
+.delivery-payment__button {
+  width: 620px;
+  padding: 0px 0px 0px 150px;
+  display: flex;
+  flex-direction: column;
 
 
+}
+
+.delivery-payment__button {}
+
+.delivery-payment__button button {
+  cursor: pointer;
+  background: var(--other-color);
+  display: block;
+  outline: none;
+  border: none;
+  padding: 16px;
+  color: #fff;
+  font-weight: var(--fw-bold);
+
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
 
 /* ! Адрес и доставка FINISH */
 /*! Контейнер с контактами покупателя FINISH */
-
-
-
 /*! Контейнер с заказом START*/
 .delivery-order__container {
   position: fixed;

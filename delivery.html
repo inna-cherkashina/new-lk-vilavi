@@ -131,9 +131,27 @@
                   <input class="form-option__input" type="text" name="name" id="name" required placeholder="Имя" />
                   <input class="form-option__input" type="text" name="surname" id="surname" required
                     placeholder="Фамилия" />
-                  <input class="form-option__input" type="number" name="phone" id="phone" value="" placeholder="11234134" />
-                  <input class="form-option__input" type="email" name="email" id="email" required placeholder="ex@mail.ru" />
+                  <input class="form-option__input" type="number" name="phone" id="phone" value=""
+                    placeholder="11234134" />
+                  <input class="form-option__input" type="email" name="email" id="email" required
+                    placeholder="ex@mail.ru" />
+                  <div class="i-agree__container">
+                    <div class="i-agree">
+                      <div class="i-agree__checkbox checkbox-active"></div>
+                      <div class="i-agree__text">
+                        я ознакомился и согласен с <a href="#">политикой обработки персональных
+                          данных</a>  и <a href="#">пользовательским соглашением</a>
+                      </div>
+                    </div>
+                    <div class="i-agree">
+                      <div class="i-agree__checkbox checkbox-disactive"></div>
+                      <div class="i-agree__text">
+                        я согласен получать новости об акциях и специальных предложениях
+                      </div>
+                    </div>
+                  </div>
                 </form>
+
 
               </div>
             </div>
@@ -141,7 +159,76 @@
           </div>
           <!-- ! Получатель FINISH-->
 
-          <div class="delivery-payment__container"></div>
+          <!-- !Оплата START -->
+          <div class="delivery-payment__container">
+            <div class="delivery-payment__title">
+              <div class="delivery-payment-item">3/3</div>
+              <div class="delivery-payment-text">оплата</div>
+              <div class="delivery-payment-open">
+                <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 10L19 1" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M1 1L10 10" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+            <div class="delivery-variant-bank__container">
+              <div class="variant-bank__empty-box"></div>
+              <ul class="variant-bank__options">
+                <li class="delivery-payment__variant-bank">
+                  <div class="i-agree-variant-bank">
+                    <div class="i-agree__checkbox checkbox-active"></div>
+                    <div class="i-agree-variant-bank__text">
+                      СБП
+                    </div>
+                  </div>
+                </li>
+                <li class="delivery-payment__variant-bank">
+                  <div class="i-agree-variant-bank">
+                    <div class="i-agree__checkbox checkbox-disactive"></div>
+                    <div class="i-agree-variant-bank__text">
+                      Оплата банковской картой
+                    </div>
+                  </div>
+                </li>
+                <li class="delivery-payment__variant-bank">
+                  <div class="i-agree-variant-bank">
+                    <div class="i-agree__checkbox checkbox-disactive"></div>
+                    <div class="i-agree-variant-bank__text">
+                      SberPay
+                    </div>
+                  </div>
+                </li>
+                <li class="delivery-payment__variant-bank">
+                  <div class="i-agree-variant-bank">
+                    <div class="i-agree__checkbox checkbox-disactive"></div>
+                    <div class="i-agree-variant-bank__text">
+                      СБП
+                    </div>
+                  </div>
+                </li>
+                <li class="delivery-payment__variant-bank">
+                  <div class="i-agree-variant-bank">
+                    <div class="i-agree__checkbox checkbox-disactive"></div>
+                    <div class="i-agree-variant-bank__text">
+                      СБП
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="delivery-variant-bank__container">
+              <div class="variant-bank__empty-box"></div>
+              <div class="delivery-payment__button">
+                <button>
+                  СПБ
+                </button>
+
+              </div>
+            </div>
+
+          </div>
+          <!-- !Оплата FINISH -->
         </div>
 
         <!--! Блок с суммой заказа и картинками товаров START-->
