@@ -57,7 +57,6 @@
 }
 
 .point-list {
-  cursor: pointer;
   margin: 35px 0px 20px 0px;
   padding: 0px 0px 10px 0px;
   font-size: var(--fsz-little-plus);
@@ -69,11 +68,17 @@
   position: relative;
 }
 
+.point-list .text,
+.point-list .img {
+  cursor: pointer;
+  color: #000;
+}
+
 .point-list--active {
   border-bottom: 1px solid black;
 }
 
-.point-list img {
+.point-list .img {
   display: block;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -96,7 +101,7 @@
   width: 435px;
   height: 235px;
   background: #ffffff;
-  top: -185px;
+  top: -300px;
   opacity: 0;
   left: -30px;
   box-shadow: 0px 0px 10px 3px #6f6f6f29;
