@@ -59,20 +59,49 @@ let basketContainer = document.querySelector('.basket-field-container');
 let basketOpen = document.querySelectorAll('.icons-box svg');
 let bodyPage = document.querySelector('body');
 
+
 basketOpen.forEach(function (basket) {
   basket.addEventListener('click', function (e) {
     e.preventDefault();
     basketContainer.classList.remove('basket-container__disactive');
     basketContainer.classList.add('basket-container__active');
     bodyPage.classList.add('scroll-disactive');
-  })
-})
-basketCLose.addEventListener('click', function (e) {
-  e.preventDefault();
-  basketContainer.classList.add('basket-container__disactive');
-  basketContainer.classList.remove('basket-container__active');
-  bodyPage.classList.remove('scroll-disactive');
-})
+  });
+});
+
+try {
+  basketCLose.addEventListener('click', function (e) {
+    e.preventDefault();
+    basketContainer.classList.add('basket-container__disactive');
+    basketContainer.classList.remove('basket-container__active');
+    bodyPage.classList.remove('scroll-disactive');
+  });
+} catch (error) { }
 
 //! Открытие блока с корзиной товара FINISH
+
+
+let init = () => {
+  let map = new ymaps.Map('myMap', {
+    center: [55.10882256960026, 82.97588249999987],
+    zoom: 16,
+    controls: ['searchControl']
+  });
+}
+ymaps.ready(init);
+//! Служба выдачи START
+let servise = document.querySelector('.point-list');
+let servisesArrow = document.querySelector('.point-list img');
+let serviseList = document.querySelector('.point-list__scroll-box');
+
+servise.addEventListener('click', function () {
+  servisesArrow.classList.toggle('rotaite');
+  servise.classList.toggle('point-list--active');
+  serviseList.classList.toggle('point-list__scroll-box--active');
+
+});
+
+//! Служба выдачи END
+
+
 

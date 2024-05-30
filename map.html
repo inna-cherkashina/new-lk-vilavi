@@ -6,23 +6,226 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Карта доставки</title>
   <link rel="stylesheet" href="./css/index-delivery.css">
+
+
 </head>
 
 <body>
   <div class="main-map__wrapper">
-    <div id="map-test" class="map"></div>
-    <section class="choise-container">
-      <div class="info-container">
-        <div class="button" data-category="category1">Кнопка - 1</div>
-        <div class="button" data-category="category2">Кнопка - 2</div>
-        <div class="button" data-category="category3">Кнопка - 3</div>
+    <div id="myMap" class="map">
+    </div>
+    <section class="goods-delivery-point__container">
+      <div class="goods-delivery-point__title">
+        <div class="center-sidebar">
+          <div class="point-title">
+            выбор<br>пункта выдачи
+          </div>
+          <div class="point-list">
+            <div>Службы выдачи</div>
+            <img src="./images/DeliveryNew/delivery-point/arrow.svg" alt="arrow">
+
+            <div class="point-list__scroll-box ">
+              <div class="point-list__list-box">
+                <div class="point-list__item-container">
+                  <div class="point-list__item-marker">
+                    <svg class="item-marker__active" width="9" height="6" viewBox="0 0 9 6" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <rect class="item-marker__active" x="0.5" y="0.5" width="8" height="5" rx="2.5" stroke="black" />
+                    </svg>
+                  </div>
+                  <div class="point-list__item-description">
+                    <div class="point-list__item-title point-list__item-title--active">VILAVI</div>
+                    <div class="point-list__item-delivery">
+                      <div class="point-list__data-delivery">дата доставки — <span>16 мая</span></div>
+                      <div class="point-list__cost-delivery">стоимость — от <span>0 ₽</span></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="point-list__item-container">
+                  <div class="point-list__item-marker">
+                    <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="0.5" y="0.5" width="8" height="5" rx="2.5" stroke="black" />
+                    </svg>
+                  </div>
+                  <div class="point-list__item-description">
+                    <div class="point-list__item-title">VILAVI</div>
+                    <div class="point-list__item-delivery">
+                      <div class="point-list__data-delivery">дата доставки — <span>16 мая</span></div>
+                      <div class="point-list__cost-delivery">стоимость — от <span>0 ₽</span></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="point-list__item-container">
+                  <div class="point-list__item-marker">
+                    <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="0.5" y="0.5" width="8" height="5" rx="2.5" stroke="black" />
+                    </svg>
+                  </div>
+                  <div class="point-list__item-description">
+                    <div class="point-list__item-title">VILAVI</div>
+                    <div class="point-list__item-delivery">
+                      <div class="point-list__data-delivery">дата доставки — <span>16 мая</span></div>
+                      <div class="point-list__cost-delivery">стоимость — от <span>0 ₽</span></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="point-list__item-container">
+                  <div class="point-list__item-marker">
+                    <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="0.5" y="0.5" width="8" height="5" rx="2.5" stroke="black" />
+                    </svg>
+                  </div>
+                  <div class="point-list__item-description">
+                    <div class="point-list__item-title">VILAVI</div>
+                    <div class="point-list__item-delivery">
+                      <div class="point-list__data-delivery">дата доставки — <span>16 мая</span></div>
+                      <div class="point-list__cost-delivery">стоимость — от <span>0 ₽</span></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="point-list__item-container">
+                  <div class="point-list__item-marker">
+                    <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="0.5" y="0.5" width="8" height="5" rx="2.5" stroke="black" />
+                    </svg>
+                  </div>
+                  <div class="point-list__item-description">
+                    <div class="point-list__item-title">VILAVI</div>
+                    <div class="point-list__item-delivery">
+                      <div class="point-list__data-delivery">дата доставки — <span>16 мая</span></div>
+                      <div class="point-list__cost-delivery">стоимость — от <span>0 ₽</span></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="point-list__item-container">
+                  <div class="point-list__item-marker">
+                    <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="0.5" y="0.5" width="8" height="5" rx="2.5" stroke="black" />
+                    </svg>
+                  </div>
+                  <div class="point-list__item-description">
+                    <div class="point-list__item-title">VILAVI</div>
+                    <div class="point-list__item-delivery">
+                      <div class="point-list__data-delivery">дата доставки — <span>16 мая</span></div>
+                      <div class="point-list__cost-delivery">стоимость — от <span>0 ₽</span></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
+      <div class="goods-delivery-point__list">
+        <div class="scroll_container">
+          <div class="goods-delivery-point__item">
+            <div class="flag">забрать сегодня</div>
+            <div class="center-sidebar">
+              <div class="delivery-point__box">
+                <div class="point-logo">
+                  <img src="./images/DeliveryNew/delivery-point/vilvi_pink.svg" alt="logo">
+                </div>
+                <div class="point-adress">
+                  Кошурникова ул д.5
+                  м. Берёзовая роща
+                </div>
+                <div class="point-cost">стоимость — от 0 ₽</div>
+                <div class="point-data-delivery">
+                  дата доставки — <span class="day-week">сегодня</span>, <span class="data">16 мая</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="goods-delivery-point__item">
+            <div class="flag">забрать сегодня</div>
+            <div class="center-sidebar">
+              <div class="delivery-point__box">
+                <div class="point-logo">
+                  <img src="./images/DeliveryNew/delivery-point/dpd_pink.svg" alt="logo">
+                </div>
+                <div class="point-adress">
+                  Кошурникова ул д.5
+                  м. Берёзовая роща
+                </div>
+                <div class="point-cost">стоимость — от 0 ₽</div>
+                <div class="point-data-delivery">
+                  дата доставки — <span class="day-week">сегодня</span>, <span class="data">16 мая</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="goods-delivery-point__item">
+            <div class="flag flag-disactive">забрать сегодня</div>
+            <div class="center-sidebar">
+              <div class="delivery-point__box">
+                <div class="point-logo">
+                  <img src="./images/DeliveryNew/delivery-point/sdek.svg" alt="logo">
+                </div>
+                <div class="point-adress">
+                  Кошурникова ул д.5
+                  м. Берёзовая роща
+                </div>
+                <div class="point-cost">стоимость — от 0 ₽</div>
+                <div class="point-data-delivery">
+                  дата доставки — <span class="day-week">сегодня</span>, <span class="data">16 мая</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="goods-delivery-point__item">
+            <div class="flag flag-disactive">забрать сегодня</div>
+            <div class="center-sidebar">
+              <div class="delivery-point__box">
+                <div class="point-logo">
+                  <img src="./images/DeliveryNew/delivery-point/post-rf.svg" alt="logo">
+                </div>
+                <div class="point-adress">
+                  Кошурникова ул д.5
+                  м. Берёзовая роща
+                </div>
+                <div class="point-cost">стоимость — от 0 ₽</div>
+                <div class="point-data-delivery">
+                  дата доставки — <span class="day-week">сегодня</span>, <span class="data">16 мая</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="goods-delivery-point__item">
+            <div class="flag flag-disactive">забрать сегодня</div>
+            <div class="center-sidebar">
+              <div class="delivery-point__box">
+                <div class="point-logo">
+                  <img src="./images/DeliveryNew/delivery-point/post-rf.svg" alt="logo">
+                </div>
+                <div class="point-adress">
+                  Кошурникова ул д.5
+                  м. Берёзовая роща
+                </div>
+                <div class="point-cost">стоимость — от 0 ₽</div>
+                <div class="point-data-delivery">
+                  дата доставки — <span class="day-week">сегодня</span>, <span class="data">16 мая</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
     </section>
   </div>
-
   <script src="https://api-maps.yandex.ru/2.1/?apikey=b29f3f9f-385d-4fa6-bfac-7261f797c219&lang=ru_RU">
   </script>
-  <script src="./js/deliveryNew/ymap.js"></script>
+  <script src="./js/deliveryNew/index.js"></script>
 </body>
 
 </html>
