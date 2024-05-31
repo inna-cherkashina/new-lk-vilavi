@@ -80,19 +80,12 @@ try {
 
 //! Открытие блока с корзиной товара FINISH
 
-
-let init = () => {
-  let map = new ymaps.Map('myMap', {
-    center: [55.10882256960026, 82.97588249999987],
-    zoom: 16,
-    controls: ['searchControl']
-  });
-}
-ymaps.ready(init);
 //! Служба выдачи START
 let servise = document.querySelector('.point-list');
 let servisesArrow = document.querySelector('.point-list img');
 let serviseList = document.querySelector('.point-list__scroll-box');
+
+let servisesItems = document.querySelectorAll('.goods-delivery-point__item');
 
 servise.addEventListener('click', function () {
   servisesArrow.classList.toggle('rotaite');
@@ -101,7 +94,26 @@ servise.addEventListener('click', function () {
 
 });
 
+servisesItems.forEach(function (servisItem) {
+  servisItem.addEventListener('click', function (elem) {
+    let target = elem.target;
+    target.closest('.goods-delivery-point__item').querySelector('.description-more').classList.toggle('description-more--disactive');
+    servisItem.classList.toggle('goods-delivery-point__item--active');
+  })
+});
+
 //! Служба выдачи END
+
+// !Карта START
+let init = () => {
+  let map = new ymaps.Map('myMap', {
+    center: [55.10882256960026, 82.97588249999987],
+    zoom: 16,
+    controls: ['searchControl']
+  });
+}
+ymaps.ready(init);
+// !Карта END
 
 
 

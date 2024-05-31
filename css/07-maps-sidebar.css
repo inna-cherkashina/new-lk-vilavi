@@ -27,16 +27,16 @@
 }
 
 .scroll_container {
-  padding: 195px 0px 0px 0px;
+  padding: 197px 0px 0px 0px;
   position: relative;
 }
 
 .goods-delivery-point__list::-webkit-scrollbar {
-  width: 12px;
+  width: 5px;
 }
 
 .goods-delivery-point__list::-webkit-scrollbar-thumb {
-  background-color: var(--other-color);
+  background-color: #000;
   border-radius: 20px;
 }
 
@@ -174,11 +174,14 @@
   font-weight: var(--fw-regular);
 }
 
-
-
 /* !===Служба выдачи END=== */
 .goods-delivery-point__item {
-  padding: 0px 0px 20px 0px;
+  margin: 0px 0px 20px 0px;
+}
+
+.goods-delivery-point__item--active {
+  background: #80808033;
+  padding: 20px 0px 0px 0px;
 }
 
 .delivery-point__box {
@@ -202,7 +205,6 @@
   -o-border-radius: 0px 50px 50px 0px;
 }
 
-
 .flag-disactive {
   display: none;
 }
@@ -220,15 +222,20 @@
 .point-adress {
   width: 150px;
   margin: 0px 0px 20px 0px;
+  font-size: var(--fsz-little);
+  font-weight: var(--fw-regular);
+
 }
 
-.point-cost {}
+.point-cost {
+  font-size: var(--fsz-little);
+  font-weight: var(--fw-regular);
+}
 
-.point-data-delivery {}
-
-.day-week {}
-
-.data {}
+.point-data-delivery {
+  font-size: var(--fsz-little);
+  font-weight: var(--fw-regular);
+}
 
 /* !===Блок с тестовыми кнопками=== */
 .info-container {
@@ -250,3 +257,49 @@
   margin: 0px 0px 20px 0px;
 
 }
+
+/* !===Блок открывающий подробную информацию о пунктах выдачи START== */
+.description-more {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0px 0px 0px;
+}
+
+.description-more--active {}
+
+.description-more--disactive {
+  display: none;
+}
+
+.point-description__container {}
+
+.point-description__title {
+  font-size: var(--fsz-little);
+  font-weight: var(--fw-medium);
+}
+
+.point-description__text {
+  font-size: var(--fsz-little);
+  font-weight: var(--fw-regular);
+}
+
+.point-description__button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 310px;
+  padding: 8px 0px 10px 0px;
+  color: #ffffff;
+  font-size: var(--fsz-little-plus);
+  font-weight: var(--fw-bold);
+  background: var(--other-color);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+/* !===Блок открывающий подробную информацию о пунктах выдачи END== */
