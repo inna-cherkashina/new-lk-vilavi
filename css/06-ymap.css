@@ -60,7 +60,7 @@
 }
 
 [class*="inner-panes"] {
-  cursor: url('/images/DeliveryNew/delivery-point/arrow-map.svg') 2 2, move;
+  cursor: url('../images/DeliveryNew/delivery-point/arrow-map.svg') 2 2, move;
 }
 
 [class*="_dotIcon"] {
@@ -69,7 +69,7 @@
 
 [class*="events-pane"] {
   /* display: none; */
-  cursor: url('/images/DeliveryNew/delivery-point/arrow-map.svg') 2 2, move !important;
+  cursor: url('../images/DeliveryNew/delivery-point/arrow-map.svg') 2 2, move !important;
 }
 
 .ymaps-2-1-79-searchbox-input.ymaps-2-1-79-_focused {
