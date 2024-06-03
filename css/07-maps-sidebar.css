@@ -49,6 +49,7 @@
   padding: 50px 0px 0px 0px;
   background: #ffffff;
   z-index: 10;
+  width: 100%;
 }
 
 .point-title {
@@ -56,12 +57,16 @@
   font-weight: var(--fw-medium);
 }
 
+.point-list__box {
+  border-bottom: 1px solid var(--border-color);
+  position: relative;
+}
+
 .point-list {
-  margin: 35px 0px 20px 0px;
+  margin: 35px 0px 00px 0px;
   padding: 0px 0px 10px 0px;
   font-size: var(--fsz-little-plus);
   font-weight: var(--fw-regular);
-  border-bottom: 1px solid var(--border-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -111,6 +116,23 @@
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
+}
+
+.point-list__cross {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  right: 10px;
+  top: 10px;
+  justify-content: center;
+  align-items: center;
+  z-index: 300;
+}
+
+.point-list__cross .cross-img {
+  display: block;
 }
 
 .point-list__scroll-box--active {
@@ -237,27 +259,6 @@
   font-weight: var(--fw-regular);
 }
 
-/* !===Блок с тестовыми кнопками=== */
-.info-container {
-  width: 100%;
-  background: #bebebe;
-  padding: 20px;
-  gap: 20px;
-}
-
-.button {
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 30px;
-  background: #000;
-  color: #ffffff;
-  margin: 0px 0px 20px 0px;
-
-}
-
 /* !===Блок открывающий подробную информацию о пунктах выдачи START== */
 .description-more {
   display: flex;
@@ -303,3 +304,78 @@
 }
 
 /* !===Блок открывающий подробную информацию о пунктах выдачи END== */
+
+/* !===Блок доставки курьером  START===*/
+.goods-courier-point__container {
+  position: fixed;
+  background: #ffffff;
+  right: 0px;
+  width: 483px;
+  height: 100vh;
+  /* display: none; */
+}
+
+.goods-courier-point--active {
+  display: block;
+  z-index: 1000;
+}
+
+.goods-courier-point__title {
+  position: fixed;
+  top: 0px;
+  padding: 50px 0px 0px 0px;
+  background: #ffffff;
+  z-index: 10;
+  width: 100%;
+}
+
+.center-sidebar {}
+
+.point-title {}
+
+.goods-courier-point__list {
+  overflow-y: auto;
+  height: 100vh;
+  position: relative;
+}
+
+.goods-courierpoint__list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.goods-courier-point__list::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border-radius: 20px;
+}
+
+.goods-courier-point__item {
+  margin: 0px 0px 20px 0px;
+}
+
+.courier-point__box {
+  padding: 10px 0px 20px 0px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.point-data-courier {
+  font-size: var(--fsz-little);
+  font-weight: var(--fw-regular);
+}
+
+.day-week {}
+
+.data {}
+
+.description-more {}
+
+.description-more--disactive {}
+
+.point-description__container {}
+
+.point-description__title {}
+
+.point-description__text {}
+
+.point-description__button {}
+
+/* !===Блок доставки курьером  END===*/

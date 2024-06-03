@@ -3,7 +3,9 @@
   height: 100vh;
   background: #a0a0a0;
   cursor: default;
+
 }
+
 
 /* !Скрываем все приблуды Яндекса */
 /* .ymaps-2-1-79-map-copyrights-promo {
@@ -29,8 +31,8 @@
 
 /* !Делаем карту серой */
 [class*="ground-pane"] {
-  filter: grayscale(1);
-  -webkit-filter: grayscale(1);
+  filter: grayscale(1) contrast(95%);
+  -webkit-filter: grayscale(1) contrast(95%);
 }
 
 .ymaps-2-1-79-searchbox__normal-layout {
