@@ -35,7 +35,7 @@
 
 .ymaps-2-1-79-searchbox__normal-layout {
   background: #fff;
-  width: 210px;
+  width: 210px !important;
   height: 40px;
 }
 
@@ -55,10 +55,23 @@
   outline: none;
 }
 
-.ymaps-2-1-79-searchbox-input.ymaps-2-1-79-_focused {
-  box-shadow: none;
+[class*="_focused"] {
+  box-shadow: none !important;
 }
 
-[class*="focused"] {
-  box-shadow: none;
+[class*="inner-panes"] {
+  cursor: url('./../images/DeliveryNew/delivery-point/arrow-map.svg') 2 2, move;
+}
+
+[class*="_dotIcon"] {
+  background-image: url('./../images/DeliveryNew/delivery-point/mark-place.svg') !important;
+}
+
+[class*="events-pane"] {
+  /* display: none; */
+  cursor: url('./../images/DeliveryNew/delivery-point/arrow-map.svg') 2 2, move !important;
+}
+
+.ymaps-2-1-79-searchbox-input.ymaps-2-1-79-_focused {
+  box-shadow: none !important;
 }

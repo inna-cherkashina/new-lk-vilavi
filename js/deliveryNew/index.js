@@ -1,7 +1,7 @@
 let basketCards = document.querySelectorAll('.basket-container');
 let countContainers = document.querySelectorAll('[data-count]');
 
-//! Открытие счётчика START
+//^ Открытие счётчика START
 basketCards.forEach(function (basket, B) {
   basket.addEventListener('click', function (e) {
 
@@ -36,9 +36,9 @@ countContainers.forEach(function (countContainer) {
 
   })
 });
-//! Открытие счётчика FINISH
+//^ Открытие счётчика FINISH
 
-//! Появление шапки при скролле страницы START
+//^ Появление шапки при скролле страницы START
 let header = document.querySelector('.header-move');
 
 window.addEventListener('scroll', function () {
@@ -51,9 +51,9 @@ window.addEventListener('scroll', function () {
     header.classList.add('header-move__hidden');
   }
 });
-//! Появление шапки при скролле страницы FINISH
+//^ Появление шапки при скролле страницы FINISH
 
-//! Открытие блока с корзиной товара START
+//^ Открытие блока с корзиной товара START
 let basketCLose = document.querySelector('.basket-close');
 let basketContainer = document.querySelector('.basket-field-container');
 let basketOpen = document.querySelectorAll('.icons-box svg');
@@ -78,9 +78,9 @@ try {
   });
 } catch (error) { }
 
-//! Открытие блока с корзиной товара FINISH
+//^ Открытие блока с корзиной товара FINISH
 
-//! Служба выдачи START
+//^Служба выдачи START
 let servise = document.querySelector('.point-list');
 let servisesArrow = document.querySelector('.point-list img');
 let serviseList = document.querySelector('.point-list__scroll-box');
@@ -102,18 +102,79 @@ servisesItems.forEach(function (servisItem) {
   })
 });
 
-//! Служба выдачи END
+//^ Служба выдачи END
 
-// !Карта START
-let init = () => {
-  let map = new ymaps.Map('myMap', {
-    center: [55.10882256960026, 82.97588249999987],
-    zoom: 16,
-    controls: ['searchControl']
+//^ Карта START
+function init() {
+  var myPlacemark,
+      myMap = new ymaps.Map('map', {
+          center: [55.108939610806985,82.97653836066765],
+          zoom: 16
+      }, {
+          searchControlProvider: 'yandex#search'
+      });
+
+  // Слушаем клик на карте.
+  myMap.events.add('click', function (e) {
+      var coords = e.get('coords');
+
+      // Если метка уже создана – просто передвигаем ее.
+      if (myPlacemark) {
+          myPlacemark.geometry.setCoordinates(coords);
+      }
+      // Если нет – создаем.
+      else {
+          myPlacemark = createPlacemark(coords);
+          myMap.geoObjects.add(myPlacemark);
+          // Слушаем событие окончания перетаскивания на метке.
+          myPlacemark.events.add('dragend', function () {
+              getAddress(myPlacemark.geometry.getCoordinates());
+          });
+      }
+      getAddress(coords);
   });
+
+  // Создание метки.
+  function createPlacemark(coords) {
+      return new ymaps.Placemark(coords, {
+          iconCaption: 'поиск...'
+      }, {
+          preset: 'islands#violetDotIconWithCaption',
+          draggable: true
+      })
+  }
+
+  // Определяем адрес по координатам (обратное геокодирование).
+  function getAddress(coords) {
+      myPlacemark.properties.set('iconCaption', 'поиск...');
+      ymaps.geocode(coords).then(function (res) {
+          var firstGeoObject = res.geoObjects.get(0);
+
+          myPlacemark.properties
+              .set({
+                  // Формируем строку с данными об объекте.
+                  iconCaption: [
+                      // Название населенного пункта или вышестоящее административно-территориальное образование.
+                      firstGeoObject.getLocalities().length ? firstGeoObject.getLocalities() : firstGeoObject.getAdministrativeAreas(),
+                      // Получаем путь до топонима, если метод вернул null, запрашиваем наименование здания.
+                      firstGeoObject.getThoroughfare() || firstGeoObject.getPremise()
+                  ].filter(Boolean).join(', '),
+                  // В качестве контента балуна задаем строку с адресом объекта.
+                  balloonContent: firstGeoObject.getAddressLine()
+              });
+    });
+  }
 }
 ymaps.ready(init);
-// !Карта END
+//^ Карта END
 
+//^ Розовая клизма по клику на карте START
+div = document.getElementById("map")
+div.onmousemove = function (e) {
+  img = document.querySelector(".black-klizma");
+  if (e.clientY + img.clientHeight <= div.offsetTop + div.clientHeight) { img.style.top = e.clientY - 50 + "px"; }
+  if (e.clientX + img.clientWidth <= div.offsetLeft + div.clientWidth) { img.style.left = e.clientX - 15 + "px"; }
 
+}
+//^ Розовая клизма по клику на карте END
 
