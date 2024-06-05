@@ -130,6 +130,13 @@ function init() {
   //~ Слушаем клик на карте.
   myMap.events.add('click', function (e) {
     var coords = e.get('coords');
+    let deliverySidebar = document.querySelector('.goods-delivery-point__container');
+    let courierSidebar = document.querySelector('.goods-courier-point__container');
+
+    deliverySidebar.classList.add('delivery-section--disactive');
+    deliverySidebar.classList.remove('delivery-section--active');
+    courierSidebar.classList.add('courier-section--active');
+    courierSidebar.classList.remove('courier-section--disactive');
 
     //~ Если метка уже создана – просто передвигаем ее.
     if (myPlacemark) {

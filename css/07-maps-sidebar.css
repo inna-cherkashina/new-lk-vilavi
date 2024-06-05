@@ -474,4 +474,21 @@
   -o-border-radius: 6px;
 }
 
+.delivery-section--active {
+  display: block;
+}
+
+.delivery-section--disactive {
+  display: none;
+}
+
+.courier-section--active {
+  display: block;
+}
+
+
+.courier-section--disactive {
+  display: none;
+}
+
 /* !===Блок доставки курьером  END===*/
