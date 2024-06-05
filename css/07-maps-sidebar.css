@@ -331,7 +331,11 @@
 
 .center-sidebar {}
 
-.point-title {}
+.point-title {
+  font-size: var(--fsz-medium);
+  font-weight: var(--fw-medium);
+  margin: 0px 0px 30px 0px;
+}
 
 .goods-courier-point__list {
   overflow-y: auto;
@@ -362,20 +366,112 @@
   font-weight: var(--fw-regular);
 }
 
-.day-week {}
+.form-courier-adress__container {}
 
-.data {}
+.coureir-adress-city {
+  margin: 0px 0px 30px 0px;
+}
 
-.description-more {}
+.courier-adress__input-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 
-.description-more--disactive {}
+.courier-adress__street {
+  margin: 0px 0px 30px 0px;
+}
 
-.point-description__container {}
+.courier-adress__street,
+.piece-of-adress {
+  position: relative;
+  width: 170px;
+  border-bottom: 1px solid var(--border-color);
+}
 
-.point-description__title {}
+.adress-street__title {
+  font-size: var(--fsz-little-plus);
+  position: absolute;
+  display: block;
+  z-index: 10;
+  top: 0px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
 
-.point-description__text {}
+.adress-street__text,
+.piece-of-adress__text {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px 5px;
+  font-size: var(--fsz-little-plus);
+  position: relative;
+}
 
-.point-description__button {}
+.piece-of-adress {
+  position: relative;
+
+}
+
+
+.piece-of-adress__title {
+  position: absolute;
+  display: block;
+  z-index: 10;
+  top: 0px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.active-adress {
+  font-size: var(--fsz-little);
+  top: -15px;
+}
+
+.piece-of-adress__text {
+  display: block;
+  width: 100%;
+  padding: 10px 5px;
+}
+
+.courier-scroll_container {
+  padding: 425px 0px 0px 0px;
+  position: relative;
+}
+
+.goods-courier-point__list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.goods-courier-point__list::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border-radius: 20px;
+}
+
+.goods-courier__button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 8px 0px 10px 0px;
+  color: #ffffff;
+  font-size: var(--fsz-little-plus);
+  font-weight: var(--fw-bold);
+  background: var(--other-color);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
 
 /* !===Блок доставки курьером  END===*/

@@ -195,4 +195,17 @@ mapBox.onmousemove = function (e) {
 }
 //^ Чёрная клизма, бегающая за курсором на карте END
 
+//^ Адрес доставки курьером форма START
 
+let labelForm = document.querySelectorAll('.lable-title');
+let inputAdress = document.querySelectorAll('.input-adress');
+inputAdress.forEach(function (inp) {
+  inp.addEventListener('click', function (elem) {
+  let target = elem.target;
+  console.log(target);
+  target.closest('.adress__container').querySelector('.lable-title').classList.add('active-adress');
+})
+
+})
+
+//^ Адрес доставки курьером форма END
