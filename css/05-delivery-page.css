@@ -37,6 +37,14 @@
   margin: 98px 0px 98px 0px;
 }
 
+@media (max-height: 750px) {
+  .delivery__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px 98px 0px;
+  }
+}
 
 /*! Контейнер с контактами покупателя START */
 .delivery-info__container {
@@ -526,3 +534,94 @@
 }
 
 /*! Контейнер с заказом FINISH*/
+
+/*! Слайдер START */
+/* Слайдер */
+.slick-slider {}
+
+/* Ограниченная оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+
+/* Слайд */
+.slick-slide {}
+
+/* Слайд активный */
+.slick-slide.slick-active {}
+
+/* Слайд основной */
+.slick-slide.slick-current {}
+
+/* Стрелка */
+.slick-arrow {}
+
+/* Стрелка вправо */
+.slick-arrow.slick-prev {
+  cursor: pointer;
+  background: url('./../images/DeliveryNew/icons/arrow-left.svg');
+  width: 30px;
+  height: 30px;
+  border: none;
+  font-size: 0px;
+  left: 0px;
+}
+
+/* Стрелка влево */
+.slick-arrow.slick-next {
+  cursor: pointer;
+  background: url('./../images/DeliveryNew/icons/arrow-right.svg');
+  width: 30px;
+  height: 30px;
+  border: none;
+  font-size: 0px;
+  right: 0px;
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+}
+
+.delivery-cards__container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.delivery-variant-pay__slider-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: start;
+}
+
+.delivery-variant-pay__empty-container {
+  width: 215px;
+}
+
+.delivery-slider__list {
+  position: relative;
+  width: 620px;
+  padding: 0px 0px 0px 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.slick-initialized {}
+
+
+.slider {}
+
+.draggable {}
+
+.slider__item {}
+
+.slick-cloned {}
+
+
+/*! Слайдер FINISH */
