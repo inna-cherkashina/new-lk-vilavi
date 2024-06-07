@@ -12,7 +12,7 @@
   <div class="main-map__wrapper">
     <div id="map" class="map">
     </div>
-    <section class="goods-delivery-point__container">
+    <section class="goods-delivery-point__container delivery-section--active">
       <div class="goods-delivery-point__title">
         <div class="center-sidebar">
           <div class="point-title">
@@ -391,19 +391,49 @@
 
     </section>
 
-    <section class="goods-courier-point__container">
+    <section class="goods-courier-point__container courier-section--disactive">
       <form action="#" method="post">
         <div class="goods-courier-point__title">
           <div class="center-sidebar">
             <div class="point-title">
               адрес доставки<br>курьером
             </div>
+            <div class="form-courier-adress__container">
+              <div class="coureir-adress-city">
+                г.Новосибирск<br>
+                Новосибирская область
+              </div>
+              <div class="courier-adress__input-container">
+                <div class="courier-adress__street adress__container">
+                  <label class="adress-street__title lable-title">улица и дом</label>
+                  <input type="text" class="adress-street__text input-adress">
+                </div>
+              </div>
+              <div class="courier-adress__input-container">
+                <div class="piece-of-adress adress__container">
+                  <label class="piece-of-adress__title lable-title">кв./офис</label>
+                  <input type="text" class="piece-of-adress__text input-adress">
+                </div>
+                <div class="piece-of-adress adress__container">
+                  <label class="piece-of-adress__title lable-title">домофон</label>
+                  <input type="text" class="piece-of-adress__text input-adress">
+                </div>
+                <div class="piece-of-adress adress__container">
+                  <label class="piece-of-adress__title lable-title">подъезд</label>
+                  <input type="text" class="piece-of-adress__text input-adress">
+                </div>
+                <div class="piece-of-adress adress__container">
+                  <label class="piece-of-adress__title lable-title">этаж</label>
+                  <input type="text" class="piece-of-adress__text input-adress">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </form>
 
       <div class="goods-courier-point__list">
-        <div class="scroll_container">
+        <div class="courier-scroll_container">
           <div class="goods-courier-point__item">
             <div class="flag">забрать сегодня</div>
             <div class="center-sidebar">
@@ -414,38 +444,6 @@
                 <div class="point-cost">стоимость — от 0 ₽</div>
                 <div class="point-data-courier">
                   дата доставки — <span class="day-week">сегодня</span>, <span class="data">16 мая</span>
-                </div>
-                <div class="description-more description-more--disactive">
-                  <div class="point-description__container">
-                    <div class="point-description__title">
-                      режим работы
-                    </div>
-                    <div class="point-description__text">
-                      пн-пт 09:00-19:00 <br>
-                      сб 10:00-16:00
-                    </div>
-                  </div>
-                  <div class="point-description__container">
-                    <div class="point-description__title">
-                      контактный телефон
-                    </div>
-                    <div class="point-description__text">
-                      8-800-234-80-00
-                    </div>
-                  </div>
-                  <div class="point-description__container">
-                    <div class="point-description__title">
-                      как добраться
-                    </div>
-                    <div class="point-description__text">
-                      метро - березовая роща. какой выход из метро - второй. остановка - красина. примерное расстояние
-                      от остановки до отделения - 100 м. 5-этажный жилой дом. 1 этаж. вход со двора. сервисный центр
-                      фотон.
-                    </div>
-                  </div>
-                  <div class="point-description__container">
-                    <a href="./delivery.html" class="point-description__button">Заберу отсюда</a>
-                  </div>
                 </div>
               </div>
             </div>
@@ -461,38 +459,6 @@
                 <div class="point-data-courier">
                   дата доставки — <span class="day-week">сегодня</span>, <span class="data">16 мая</span>
                 </div>
-                <div class="description-more description-more--disactive">
-                  <div class="point-description__container">
-                    <div class="point-description__title">
-                      режим работы
-                    </div>
-                    <div class="point-description__text">
-                      пн-пт 09:00-19:00 <br>
-                      сб 10:00-16:00
-                    </div>
-                  </div>
-                  <div class="point-description__container">
-                    <div class="point-description__title">
-                      контактный телефон
-                    </div>
-                    <div class="point-description__text">
-                      8-800-234-80-00
-                    </div>
-                  </div>
-                  <div class="point-description__container">
-                    <div class="point-description__title">
-                      как добраться
-                    </div>
-                    <div class="point-description__text">
-                      метро - березовая роща. какой выход из метро - второй. остановка - красина. примерное расстояние
-                      от остановки до отделения - 100 м. 5-этажный жилой дом. 1 этаж. вход со двора. сервисный центр
-                      фотон.
-                    </div>
-                  </div>
-                  <div class="point-description__container">
-                    <a href="./delivery.html" class="point-description__button">Заберу отсюда</a>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -506,38 +472,6 @@
                 <div class="point-cost">стоимость — от 0 ₽</div>
                 <div class="point-data-courier">
                   дата доставки — <span class="day-week">сегодня</span>, <span class="data">16 мая</span>
-                </div>
-                <div class="description-more description-more--disactive">
-                  <div class="point-description__container">
-                    <div class="point-description__title">
-                      режим работы
-                    </div>
-                    <div class="point-description__text">
-                      пн-пт 09:00-19:00 <br>
-                      сб 10:00-16:00
-                    </div>
-                  </div>
-                  <div class="point-description__container">
-                    <div class="point-description__title">
-                      контактный телефон
-                    </div>
-                    <div class="point-description__text">
-                      8-800-234-80-00
-                    </div>
-                  </div>
-                  <div class="point-description__container">
-                    <div class="point-description__title">
-                      как добраться
-                    </div>
-                    <div class="point-description__text">
-                      метро - березовая роща. какой выход из метро - второй. остановка - красина. примерное расстояние
-                      от остановки до отделения - 100 м. 5-этажный жилой дом. 1 этаж. вход со двора. сервисный центр
-                      фотон.
-                    </div>
-                  </div>
-                  <div class="point-description__container">
-                    <a href="./delivery.html" class="point-description__button">Заберу отсюда</a>
-                  </div>
                 </div>
               </div>
             </div>
@@ -553,40 +487,14 @@
                 <div class="point-data-courier">
                   дата доставки — <span class="day-week">сегодня</span>, <span class="data">16 мая</span>
                 </div>
-                <div class="description-more description-more--disactive">
-                  <div class="point-description__container">
-                    <div class="point-description__title">
-                      режим работы
-                    </div>
-                    <div class="point-description__text">
-                      пн-пт 09:00-19:00 <br>
-                      сб 10:00-16:00
-                    </div>
-                  </div>
-                  <div class="point-description__container">
-                    <div class="point-description__title">
-                      контактный телефон
-                    </div>
-                    <div class="point-description__text">
-                      8-800-234-80-00
-                    </div>
-                  </div>
-                  <div class="point-description__container">
-                    <div class="point-description__title">
-                      как добраться
-                    </div>
-                    <div class="point-description__text">
-                      метро - березовая роща. какой выход из метро - второй. остановка - красина. примерное расстояние
-                      от остановки до отделения - 100 м. 5-этажный жилой дом. 1 этаж. вход со двора. сервисный центр
-                      фотон.
-                    </div>
-                  </div>
-                  <div class="point-description__container">
-                    <a href="./delivery.html" class="point-description__button">Заберу отсюда</a>
-                  </div>
-                </div>
               </div>
             </div>
+          </div>
+          <div class="goods-courier-point__item">
+            <div class="center-sidebar">
+              <a href="./delivery.html" class="goods-courier__button">Привезти сюда</a>
+            </div>
+
           </div>
         </div>
       </div>
@@ -597,7 +505,7 @@
   </div>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=b29f3f9f-385d-4fa6-bfac-7261f797c219&lang=ru_RU">
   </script>
-  <script src="./js/deliveryNew/index.js"></script>
+  <script src="./js/deliveryNew/map-delivery.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
 </body>

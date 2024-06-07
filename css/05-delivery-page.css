@@ -37,6 +37,14 @@
   margin: 98px 0px 98px 0px;
 }
 
+@media (max-height: 750px) {
+  .delivery__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px 98px 0px;
+  }
+}
 
 /*! Контейнер с контактами покупателя START */
 .delivery-info__container {
@@ -469,9 +477,43 @@
   font-weight: var(--fw-medium);
 }
 
+.your-order-delivery__checkbox {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.your-order-delivery__bonus-button {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  border: 1px solid #000;
+  flex-grow: 1;
+  padding: 13px 15px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.your-order-delivery__bonus-button::after {
+  position: absolute;
+  content: url('./../images/DeliveryNew/icons/checkbox-arrow.svg');
+  width: 9px;
+  height: 5px;
+  right: 10px;
+}
+
 .your-order-delivery {
   display: flex;
   margin: 15px 0px 0px 0px;
+}
+
+.order-delivery-checkbox {
+  align-items: center;
+  gap: 15px;
+  margin: 25px 0px 0px 0px;
 }
 
 .your-order-delivery__text {
@@ -484,10 +526,133 @@
   border-bottom: 1px dotted black;
 }
 
+.order-delivery-progress {
+  margin: 25px 0px 0px 0px;
+}
+
 .your-order-delivery__resalt {
   font-size: var(--fsz-little-plus);
   font-weight: var(--fw-medium);
 }
+
+/* Прогрессбар Start */
+.order-delivery-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.order-delivery-progress__text {
+  font-size: var(--fsz-mini);
+  font-weight: var(--fw-regular);
+}
+
+input[type=range].styled-slider {
+  height: 5px;
+  -webkit-appearance: none;
+  width: 100%;
+}
+
+input[type=range].styled-slider.slider-progress {
+  --range: calc(var(--max) - var(--min));
+  --ratio: calc((var(--value) - var(--min)) / var(--range));
+  --sx: calc(0.5 * 2em + var(--ratio) * (100% - 2em));
+}
+
+input[type=range].styled-slider:focus {
+  outline: none;
+}
+
+/*webkit*/
+input[type=range].styled-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 10px;
+  border-radius: 1em;
+  background: #000;
+  border: none;
+  margin: -15px 0px 0px -5px;
+}
+
+input[type=range].styled-slider::-webkit-slider-runnable-track {
+  height: 5px;
+  border-radius: none;
+  background: #E6E6E6;
+  box-shadow: none;
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  -ms-border-radius: none;
+  -o-border-radius: none;
+}
+
+input[type=range].styled-slider.slider-progress::-webkit-slider-runnable-track {
+  background: linear-gradient(#000000, #000000) 0/var(--sx) 100% no-repeat, #E6E6E6;
+}
+
+/*mozilla*/
+input[type=range].styled-slider::-moz-range-thumb {
+  width: 18px;
+  height: 10px;
+  border-radius: 1em;
+  background: #000;
+  border: none;
+  margin: -15px 0px 0px -5px;
+}
+
+input[type=range].styled-slider::-moz-range-track {
+  height: 5px;
+  border-radius: none;
+  background: #E6E6E6;
+  box-shadow: none;
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  -ms-border-radius: none;
+  -o-border-radius: none;
+}
+
+input[type=range].styled-slider.slider-progress::-moz-range-track {
+  background: linear-gradient(#000000, #000) 0/var(--sx) 100% no-repeat, #E6E6E6;
+}
+
+/*ms*/
+input[type=range].styled-slider::-ms-fill-upper {
+  background: transparent;
+  border-color: transparent;
+}
+
+input[type=range].styled-slider::-ms-fill-lower {
+  background: transparent;
+  border-color: transparent;
+}
+
+input[type=range].styled-slider::-ms-thumb {
+  width: 18px;
+  height: 10px;
+  border-radius: 1em;
+  background: #000;
+  border: none;
+  margin: -15px 0px 0px -5px;
+}
+
+input[type=range].styled-slider::-ms-track {
+  height: 5px;
+  border-radius: none;
+  background: #E6E6E6;
+  box-shadow: none;
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  -ms-border-radius: none;
+  -o-border-radius: none;
+}
+
+input[type=range].styled-slider.slider-progress::-ms-fill-lower {
+  height: max(calc(1em - 1px - 1px), 0px);
+  margin: -1px 0 -1px -1px;
+  background: #000000;
+  border-right-width: 0;
+}
+
+/*  Прогрессбар End */
 
 .your-order-footer {
   margin: 44px 0px 0px 0px;
@@ -506,6 +671,197 @@
   font-weight: var(--fw-medium);
 }
 
+/*! Контейнер с заказом FINISH*/
+
+/*! Слайдер START */
+/* Ограниченная оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+
+/* Стрелка вправо */
+.slick-arrow.slick-prev {
+  cursor: pointer;
+  background: url('./../images/DeliveryNew/icons/arrow-left.svg');
+  width: 30px;
+  height: 30px;
+  border: none;
+  font-size: 0px;
+  left: -35px;
+}
+
+/* Стрелка влево */
+.slick-arrow.slick-next {
+  cursor: pointer;
+  background: url('./../images/DeliveryNew/icons/arrow-right.svg');
+  width: 30px;
+  height: 30px;
+  border: none;
+  font-size: 0px;
+  right: -35px;
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 30%;
+  z-index: 10;
+}
+
+.delivery-cards__container {
+  width: 100%;
+
+}
+
+.delivery-variant-pay__slider-container,
+.delivery-form-pay__container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: start;
+}
+
+.delivery-variant-pay__empty-container,
+.delivery-form-pay__empty-container {
+  width: 215px;
+}
+
+.delivery-variant-pay__full-container,
+.delivery-form-pay__full-container {
+  position: relative;
+  width: 620px;
+  padding: 0px 0px 0px 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.delivery-variant-pay__list {
+  position: relative;
+}
+
+/*! Слайдер FINISH */
+/*! Форма оплаты по карте START */
+.delivery-form-pay__container {
+  margin: 25px 0px 0px 0px;
+}
+
+.delivery-form-pay__full-container {
+  padding: 0px 0px 0px 130px;
+}
+
+.delivery-form-pay {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.input-card-number__box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.until-inputs__wrapper {
+  display: flex;
+}
+
+.input-card-until__box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-card-cvc__box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-pay__label {
+  display: block;
+  font-size: var(--fsz-little);
+  font-weight: var(--fw-regular);
+  color: var(--form-pay-color);
+}
+
+.form-pay__input {
+  display: block;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-size: var(--fsz-little);
+  padding: 14px 15px;
+  outline: none;
+}
+
+.form-pay__input::placeholder {
+  color: var(--disactive-color);
+  font-size: var(--fsz-little);
+  font-weight: var(--fw-regular);
+}
+
+.form-pay__input-number {
+  width: 330px;
+}
+
+.until-inputs__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.until-slash {
+  color: var(--disactive-color);
+  font-size: var(--fsz-little);
+  font-weight: var(--fw-regular);
+}
+
+.form-pay__until {
+  width: 70px;
+}
+
+.form-pay__cvc {
+  width: 70px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.input-card-checkbox__box {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.form-pay__input {}
+
+.form-pay__checkbox {
+  width: 24px;
+  height: 24px;
+}
+
+.input-card-checkbox__text {
+  width: 270px;
+  font-size: var(--fsz-mini);
+  font-weight: var(--fw-regular);
+}
+
+
 .order-button {
   cursor: pointer;
   margin: 35px 0px 0px 0px;
@@ -513,16 +869,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--disactive-color);
+  background: #000;
   padding: 13px 0px 16px 0px;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
   color: #fff;
   font-size: var(--fsz-little-plus);
   font-weight: var(--fw-medium);
+  border: none;
+  outline: none;
 }
 
-/*! Контейнер с заказом FINISH*/
+
+/*! Форма оплаты по карте FINISH */
