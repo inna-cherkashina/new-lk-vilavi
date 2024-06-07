@@ -536,9 +536,6 @@
 /*! Контейнер с заказом FINISH*/
 
 /*! Слайдер START */
-/* Слайдер */
-.slick-slider {}
-
 /* Ограниченная оболочка */
 .slick-list {
   overflow: hidden;
@@ -549,18 +546,6 @@
   display: flex;
 }
 
-/* Слайд */
-.slick-slide {}
-
-/* Слайд активный */
-.slick-slide.slick-active {}
-
-/* Слайд основной */
-.slick-slide.slick-current {}
-
-/* Стрелка */
-.slick-arrow {}
-
 /* Стрелка вправо */
 .slick-arrow.slick-prev {
   cursor: pointer;
@@ -569,7 +554,7 @@
   height: 30px;
   border: none;
   font-size: 0px;
-  left: 0px;
+  left: -35px;
 }
 
 /* Стрелка влево */
@@ -580,31 +565,34 @@
   height: 30px;
   border: none;
   font-size: 0px;
-  right: 0px;
+  right: -35px;
 }
 
 .slider .slick-arrow {
   position: absolute;
-  top: 50%;
+  top: 30%;
   z-index: 10;
 }
 
 .delivery-cards__container {
   width: 100%;
-  overflow: hidden;
+
 }
 
-.delivery-variant-pay__slider-container {
+.delivery-variant-pay__slider-container,
+.delivery-form-pay__container {
   display: flex;
   justify-content: flex-end;
   align-items: start;
 }
 
-.delivery-variant-pay__empty-container {
+.delivery-variant-pay__empty-container,
+.delivery-form-pay__empty-container {
   width: 215px;
 }
 
-.delivery-slider__list {
+.delivery-variant-pay__full-container,
+.delivery-form-pay__full-container {
   position: relative;
   width: 620px;
   padding: 0px 0px 0px 150px;
@@ -612,16 +600,33 @@
   flex-direction: column;
 }
 
-.slick-initialized {}
-
-
-.slider {}
-
-.draggable {}
-
-.slider__item {}
-
-.slick-cloned {}
-
+.delivery-variant-pay__list {
+  position: relative;
+}
 
 /*! Слайдер FINISH */
+/*! Форма оплаты по карте START */
+.delivery-form-pay__container {
+  margin: 25px 0px 0px 0px;
+}
+
+.delivery-form-pay__full-container {
+  padding: 0px 0px 0px 130px;
+}
+
+.delivery-form-pay {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-card-number__box {}
+
+.form-pay__label {}
+
+.form-pay__input {}
+
+.input-card-until__box {}
+
+.input-card-cvc__box {}
+
+/*! Форма оплаты по карте FINISH */
