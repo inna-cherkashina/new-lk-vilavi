@@ -186,18 +186,31 @@
                 <div class="delivery-form-pay__full-container">
                   <form action="#" method="post" class="delivery-form-pay">
                     <div class="input-card-number__box">
-                      <label clas="form-pay__label" for="">Номер карты</label>
-                      <input class="form-pay__input" type="number" name="" id="" placeholder="1234 5678 9012 3456">
+                      <label class="form-pay__label" for="">Номер карты</label>
+                      <input class="form-pay__input form-pay__input-number" type="number" name="" id=""
+                        placeholder="1234 5678 9012 3456">
                     </div>
                     <div class="input-card-until__box">
-                      <label clas="form-pay__label" for="">Действует до</label>
-                      <input class="form-pay__input" type="number" name="" id="">
-                      <input class="form-pay__input" type="number" name="" id="">
+                      <label class="form-pay__label" for="">Действует до</label>
+                      <div class="until-inputs__wrapper">
+                        <input class="form-pay__input form-pay__until" type="number" name="" id="">
+                        <div class="until-slash">/</div>
+                        <input class="form-pay__input form-pay__until" type="number" name="" id="">
+                      </div>
                     </div>
                     <div class="input-card-cvc__box">
-                      <label clas="form-pay__label" for="">CVV/CVC</label>
-                      <input class="form-pay__input" type="number" name="" id="" placeholder="000">
+                      <label class="form-pay__label" for="">CVV/CVC</label>
+                      <input class="form-pay__input form-pay__cvc" type="number" name="" id="" placeholder="000">
                     </div>
+                    <div class="input-card-checkbox__box">
+                      <input class="form-pay__input form-pay__checkbox" type="checkbox" name="" id="">
+                      <div class="input-card-checkbox__text">
+                        Запомнить карту. Это безопасно.<br>
+                        Сохраняя карту, вы соглашаетесь<br>
+                        с условиями привязки карты
+                      </div>
+                    </div>
+                    <button class="order-button">Оплатить</button>
                   </form>
                 </div>
               </div>
@@ -236,7 +249,6 @@
                 <div class="your-order-resalt-sum">6 880 ₽</div>
               </div>
             </div>
-            <div class="order-button">Название способа оплаты</div>
           </div>
           <!--! Блок с суммой заказа и картинками товаров FINISH-->
         </div>
