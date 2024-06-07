@@ -193,9 +193,9 @@
                     <div class="input-card-until__box">
                       <label class="form-pay__label" for="">Действует до</label>
                       <div class="until-inputs__wrapper">
-                        <input class="form-pay__input form-pay__until" type="number" name="" id="">
+                        <input class="form-pay__input form-pay__until" type="number" name="" id="" placeholder="ММ">
                         <div class="until-slash">/</div>
-                        <input class="form-pay__input form-pay__until" type="number" name="" id="">
+                        <input class="form-pay__input form-pay__until" type="number" name="" id="" placeholder="ГГ">
                       </div>
                     </div>
                     <div class="input-card-cvc__box">
@@ -231,7 +231,7 @@
                   <img class="your-img-product" src="./images/DeliveryNew/products/prod-1.png" alt="продукты">
                   <img class="your-img-product" src="./images/DeliveryNew/products/prod-2.png" alt="продукты">
                   <img class="your-img-product" src="./images/DeliveryNew/products/prod-3.png" alt="продукты">
-                  <img class="your-img-product" src="./images/DeliveryNew/products/prod-4.png" alt="продукты">
+                  <!-- <img class="your-img-product" src="./images/DeliveryNew/products/prod-4.png" alt="продукты"> -->
                 </section>
                 <section class="your-order-sum__container">
                   <div class="your-order-sum__text">сумма заказа</div>
@@ -243,6 +243,38 @@
                   <div class="your-order-delivery__dott"></div>
                   <div class="your-order-delivery__resalt">бесплатно</div>
                 </section>
+                <section class="your-order-delivery order-delivery-checkbox">
+                  <input type="checkbox" class="your-order-delivery__checkbox">
+                  <div class="your-order-delivery__bonus-button">Оплата бонусным счетом</div>
+                </section>
+                <section class="your-order-delivery ">
+                  <div class="your-order-delivery__text">Бонусы</div>
+                  <div class="your-order-delivery__dott"></div>
+                  <div class="your-order-delivery__resalt">- 4 989 ₽</div>
+                </section>
+                <section class="your-order-delivery order-delivery-progress">
+                  <input min="0" max="100" name="range" step="1" type="range" value="0"
+                    class="styled-slider slider-progress">
+                  <div class="order-delivery-progress__text">
+                    До получения <strong>1000 бонусов</strong> добавьте товар на <strong>130 PV</strong>
+                  </div>
+                </section>
+                <section class="your-order-delivery order-delivery-progress">
+                  <input min="0" max="100" name="range" step="1" type="range" value="0"
+                    class="styled-slider slider-progress">
+                  <div class="order-delivery-progress__text">
+                    До получения <strong>BRONZE</strong> осталось <strong>112 PV</strong>
+                  </div>
+                </section>
+                <script>
+                  let ranges = document.querySelectorAll('input[type="range"].slider-progress')
+                  for (let element of ranges) {
+                    element.style.setProperty('--value', element.value);
+                    element.style.setProperty('--min', element.min == '' ? '0' : element.min);
+                    element.style.setProperty('--max', element.max == '' ? '100' : element.max);
+                    element.addEventListener('input', () => element.style.setProperty('--value', element.value));
+                  }
+                </script>
               </div>
               <div class="your-order-footer">
                 <div class="your-order-resalt">Итого</div>
