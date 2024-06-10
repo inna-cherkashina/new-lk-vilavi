@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   gap: 30px;
   padding: 75px 0px 25px 0px;
+  justify-content: space-evenly;
 }
 
 .product-card {

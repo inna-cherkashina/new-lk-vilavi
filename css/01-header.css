@@ -22,6 +22,18 @@
   padding: 30px 0px 30px 0px;
 }
 
+.mobile-icon-box {
+  display: none;
+}
+
+.header-element .mobile-search-icon {
+  display: none;
+}
+
+.mobile-icon-box .burger-mobile-icon {
+  display: none;
+}
+
 /* ! ---Смена цветов у шапки НАЧАЛО---*/
 header:hover .header-top {
   background: #fff;
@@ -135,53 +147,89 @@ header:hover .svg-basket path {
   color: #000000;
 }
 
-/*  .scroll-block {
-  cursor: pointer;
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  border: 2px solid #bcbcff;
-  bottom: 20px;
-  right: 20px;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 28px;
-  color: #bcbcff;
-  -webkit-animation: .3s scroll_visible;
-  animation: .3s scroll_visible
-}
-
-
-
-.hidden {
-  bottom: -300px;
-  -webkit-animation: .3s scroll_hidden;
-  animation: .3s scroll_hidden
-}
-
-@-webkit-keyframes scroll_visible {
-  from {
-    bottom: -300px
-  }
-}
-
-@keyframes scroll_visible {
-  from {
-    bottom: -300px
-  }
-}
-
-@-webkit-keyframes scroll_hidden {
-  from {
-    bottom: 20px
-  }
-}
-
-@keyframes scroll_hidden {
-  from {
-    bottom: 20px
-  }
-} */
 /* !---Выезжающий хедер КОНЕЦ--- */
+
+/*! Мобильная адаптация */
+@media(max-width: 480px) {
+  .mobile-icon-box {
+    display: flex;
+  }
+
+  .header-top {
+    display: none;
+  }
+
+  .header-move__hidden {
+    top: 0px;
+    position: fixed;
+  }
+
+  .header-move__visible {
+    position: fixed;
+  }
+
+  .choice-regiones-box {
+    display: none;
+  }
+
+  .header-element .search-icon {
+    display: none;
+  }
+
+  .mobile-icon-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .icons-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .mobile-icon-box .mobile-search-icon {
+    display: block;
+  }
+
+  .mobile-icon-box .burger-mobile-icon {
+    display: block;
+  }
+
+  .products-container {
+    gap: 5px;
+    padding: 75px 0px 25px 0px;
+    justify-content: space-evenly;
+  }
+
+  .product-img {
+    display: block;
+    margin: 0px 0px 24px 0px;
+    object-fit: cover;
+  }
+
+  .product-card {
+    width: 155px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+
+  .basket-container {
+    width: 32px;
+    height: 32px;
+    bottom: 174px;
+    right: 3px;
+  }
+
+  .svg-basket{
+    width: 14px;
+    height: 16px;
+  }
+}
