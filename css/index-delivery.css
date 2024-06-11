@@ -76,3 +76,9 @@ header {
 .scroll-active {
   overflow-y: auto;
 }
+
+@media(max-width: 480px) {
+  .center-popup {
+    margin: 0px 20px;
+  }
+}

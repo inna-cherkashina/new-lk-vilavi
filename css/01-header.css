@@ -34,6 +34,33 @@
   display: none;
 }
 
+.products-filtres__sidebar-container {
+  display: flex;
+  margin: 30px 0px 0px 0px;
+  gap: 50px;
+
+}
+
+.filters-item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-flex {
+  flex-grow: 1;
+}
+
+.filters-item__text {
+  font-size: var(--fsz-little);
+  font-weight: var(--fw-medium);
+}
+
+.filters-item__icon {
+  display: block;
+}
+
 /* ! ---Смена цветов у шапки НАЧАЛО---*/
 header:hover .header-top {
   background: #fff;
@@ -151,6 +178,18 @@ header:hover .svg-basket path {
 
 /*! Мобильная адаптация */
 @media(max-width: 480px) {
+  .header-change-color {
+    padding: 10px 0px 10px 0px;
+  }
+
+  .header-catalog-name {
+    font-weight: var(--fw-medium);
+    font-size: 24px;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 250px 0px 0px 20px;
+  }
+
   .mobile-icon-box {
     display: flex;
   }
@@ -162,10 +201,14 @@ header:hover .svg-basket path {
   .header-move__hidden {
     top: 0px;
     position: fixed;
+    z-index: 233;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
   .header-move__visible {
+    top: 0px;
     position: fixed;
+    z-index: 233;
   }
 
   .choice-regiones-box {
@@ -190,6 +233,10 @@ header:hover .svg-basket path {
     gap: 30px;
   }
 
+  .header-container {
+    background-position-x: center;
+  }
+
   .mobile-icon-box .mobile-search-icon {
     display: block;
   }
@@ -198,38 +245,4 @@ header:hover .svg-basket path {
     display: block;
   }
 
-  .products-container {
-    gap: 5px;
-    padding: 75px 0px 25px 0px;
-    justify-content: space-evenly;
-  }
-
-  .product-img {
-    display: block;
-    margin: 0px 0px 24px 0px;
-    object-fit: cover;
-  }
-
-  .product-card {
-    width: 155px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-  }
-
-  .basket-container {
-    width: 32px;
-    height: 32px;
-    bottom: 174px;
-    right: 3px;
-  }
-
-  .svg-basket{
-    width: 14px;
-    height: 16px;
-  }
 }

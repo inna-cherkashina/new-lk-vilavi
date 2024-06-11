@@ -58,8 +58,8 @@
   background: var(--other-color);
   width: 56px;
   height: 56px;
-  bottom: 160px;
-  right: 20px;
+  top: 350px;
+  right: 26px;
   border-radius: 100px;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
@@ -73,9 +73,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 160px;
+  top: 370px;
   right: 20px;
   gap: 10px;
+}
+
+.button-count.minus svg {
+  width: 40px;
+  height: 40px;
+}
+
+.button-count.plus svg {
+  width: 40px;
+  height: 40px;
 }
 
 .disactive {
@@ -114,3 +124,87 @@
 
 
 /* !---Корзина и счётчик корзины в карточке КОНЕЦ--- */
+
+@media(max-width: 480px) {
+  .products-container {
+    row-gap: 25px;
+    column-gap: 5px;
+    padding: 30px 0px 25px 0px;
+    justify-content: space-evenly;
+  }
+
+  .product-img {
+    display: block;
+    margin: 0px 0px 10px 0px;
+    object-fit: cover;
+  }
+
+  .product-card {
+    width: 155px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+
+  .basket-container {
+    width: 32px;
+    height: 32px;
+    top: 123px;
+    right: 3px;
+  }
+
+  .svg-basket {
+    width: 14px;
+    height: 16px;
+  }
+
+  .products-filtres__sidebar-container {
+    justify-content: space-between;
+  }
+
+  .products-filtres-container {
+    display: none;
+  }
+
+  .filter-flex {
+    display: none !important;
+  }
+
+  .count-container {
+    top: 121px;
+    right: 3px;
+    gap: 10px;
+  }
+
+  .product-title {
+    font-size: var(--fsz-little-plus);
+    font-weight: var(--fw-medium);
+    margin: 0px 0px 10px 0px;
+  }
+
+  .product-cost {
+    font-size: var(--fsz-little-plus);
+    font-weight: var(--fw-medium);
+    margin: 0px 0px 10px 0px;
+  }
+
+  .product-delivery {
+    font-size: var(--fsz-little);
+    font-weight: var(--fw-medium);
+  }
+
+  .button-count.minus svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .button-count.plus svg {
+    width: 32px;
+    height: 32px;
+  }
+
+}

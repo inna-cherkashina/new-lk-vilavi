@@ -69,13 +69,42 @@ basketOpen.forEach(function (basket) {
   });
 });
 
-
-  basketCLose.addEventListener('click', function (e) {
-    e.preventDefault();
-    basketContainer.classList.add('basket-container__disactive');
-    basketContainer.classList.remove('basket-container__active');
-    bodyPage.classList.remove('scroll-disactive');
-  });
-
+basketCLose.addEventListener('click', function (e) {
+  e.preventDefault();
+  basketContainer.classList.add('basket-container__disactive');
+  basketContainer.classList.remove('basket-container__active');
+  bodyPage.classList.remove('scroll-disactive');
+});
 
 //^ Открытие блока с корзиной товара FINISH
+
+//^ Очищаем корзину от товаров START
+let basketReset = document.querySelector('.basket-button-reset');
+let basketProductItem = document.querySelectorAll('.basket-product-item');
+let orderCostSum = document.querySelector('.order-cost-sum');
+let orderCostResalt = document.querySelector('.order-finish__cost-resalt');
+let productDelete = document.querySelectorAll('.basket-product-item');
+
+
+basketReset.addEventListener('click', function (elem) {
+  elem.preventDefault();
+  basketProductItem.forEach(function (item) {
+    item.remove();
+  });
+  orderCostSum.textContent = "0";
+  orderCostResalt.textContent = "0";
+});
+
+productDelete.forEach(function (itemDel) {
+  itemDel.addEventListener('click', function (elem) {
+    let target = elem.target;
+    target.closest('.basket-product-item').querySelector('.product-close .close-img')
+    if (target.closest('.product-close .close-img')) {
+      target.closest('.basket-product-item').remove();
+    }
+
+  })
+
+});
+
+//^ Очищаем корзину от товаров FINISH 
