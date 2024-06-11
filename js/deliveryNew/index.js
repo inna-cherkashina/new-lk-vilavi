@@ -85,7 +85,6 @@ let orderCostSum = document.querySelector('.order-cost-sum');
 let orderCostResalt = document.querySelector('.order-finish__cost-resalt');
 let productDelete = document.querySelectorAll('.basket-product-item');
 
-
 basketReset.addEventListener('click', function (elem) {
   elem.preventDefault();
   basketProductItem.forEach(function (item) {
@@ -102,9 +101,7 @@ productDelete.forEach(function (itemDel) {
     if (target.closest('.product-close .close-img')) {
       target.closest('.basket-product-item').remove();
     }
-
   })
-
 });
 
 //^ Очищаем корзину от товаров FINISH 
