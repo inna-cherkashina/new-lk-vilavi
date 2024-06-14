@@ -1,8 +1,49 @@
+const categoriesData = {
+  features: [
+    {
+      "type": "Feature",
+      "id": 0,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.831903,
+          37.411961
+        ]
+      },
+      "img": "spb.svg"
+    },
+    {
+      "type": "Feature",
+      "id": 1,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.763338,
+          37.565466
+        ]
+      },
+      "img": "spb.svg"
+    },
+    {
+      "type": "Feature",
+      "id": 2,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.763338,
+          37.565466
+        ]
+      },
+      "img": "spb.svg"
+    }
+  ]
+};
+
 
 //^ Карта START
 function init() {
   myMap = new ymaps.Map('map', {
-    center: [55.108939610806985, 82.97653836066765],
+    center: [55.763338, 37.565466],
     zoom: 16
   }, {
     searchControlProvider: 'yandex#search'
@@ -67,6 +108,41 @@ function init() {
         });
     });
   }
+
+
+  let myPlacemark1 = new ymaps.Placemark([55.831903, 37.411961], {
+    hintContent: 'Собственный значок метки',
+    balloonContent: 'Это красивая метка'
+  }, {
+    // Опции.
+    // Необходимо указать данный тип макета.
+    iconLayout: 'default#image',
+    // Своё изображение иконки метки.
+    iconImageHref: './../images/DeliveryNew/icon-map/dpd-pink.svg',
+    // Размеры метки.
+    iconImageSize: [30, 42],
+    // Смещение левого верхнего угла иконки относительно
+    // её "ножки" (точки привязки).
+    // iconImageOffset: [-5, -38]
+  });
+  let myPlacemark2 = new ymaps.Placemark([55.763338, 37.565466], {
+    hintContent: 'Собственный значок метки',
+    balloonContent: 'Это красивая метка'
+  }, {
+    // Опции.
+    // Необходимо указать данный тип макета.
+    iconLayout: 'default#image',
+    // Своё изображение иконки метки.
+    iconImageHref: './../images/DeliveryNew/icon-map/dpd-pink.svg',
+    // Размеры метки.
+    iconImageSize: [30, 42],
+    // Смещение левого верхнего угла иконки относительно
+    // её "ножки" (точки привязки).
+    // iconImageOffset: [-5, -38]
+  })
+  myMap.geoObjects
+    .add(myPlacemark1)
+    .add(myPlacemark2);
 }
 ymaps.ready(init);
 
@@ -122,10 +198,10 @@ let labelForm = document.querySelectorAll('.lable-title');
 let inputAdress = document.querySelectorAll('.input-adress');
 inputAdress.forEach(function (inp) {
   inp.addEventListener('click', function (elem) {
-  let target = elem.target;
-  console.log(target);
-  target.closest('.adress__container').querySelector('.lable-title').classList.add('active-adress');
-})
+    let target = elem.target;
+    console.log(target);
+    target.closest('.adress__container').querySelector('.lable-title').classList.add('active-adress');
+  })
 
 })
 

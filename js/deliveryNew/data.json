@@ -1,5 +1,4 @@
 {
-  "type": "FeatureCollection",
   "features": [
     {
       "type": "Feature",
@@ -11,13 +10,7 @@
           37.411961
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -29,13 +22,7 @@
           37.565466
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -47,13 +34,7 @@
           37.565466
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -65,13 +46,7 @@
           37.616378
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -83,13 +58,7 @@
           37.642889
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -101,13 +70,7 @@
           37.435983
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -119,13 +82,7 @@
           37.675638
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -137,13 +94,7 @@
           37.589988
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -155,13 +106,7 @@
           37.56084
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -173,13 +118,7 @@
           37.433781
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -191,13 +130,7 @@
           37.669838
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -209,13 +142,7 @@
           37.482338
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -227,13 +154,7 @@
           37.75021
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -245,13 +166,7 @@
           37.654142
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -263,13 +178,7 @@
           37.713329
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -281,13 +190,7 @@
           37.525797
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -299,13 +202,7 @@
           37.710743
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -317,13 +214,7 @@
           37.717934
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -335,13 +226,7 @@
           37.737
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -353,13 +238,7 @@
           37.760113
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -371,13 +250,7 @@
           37.730838
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -389,13 +262,7 @@
           37.564769
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -407,13 +274,7 @@
           37.5394
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -425,13 +286,7 @@
           37.405853
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -443,13 +298,7 @@
           37.5129
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -461,13 +310,7 @@
           37.44218
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -479,13 +322,7 @@
           37.440448
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -497,13 +334,7 @@
           37.404853
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -515,13 +346,7 @@
           37.728976
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -533,13 +358,7 @@
           37.597163
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -551,13 +370,7 @@
           37.689397
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -569,13 +382,7 @@
           37.600961
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -587,13 +394,7 @@
           37.658425
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -605,13 +406,7 @@
           37.605126
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -623,13 +418,7 @@
           37.431744
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -641,13 +430,7 @@
           37.778445
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -659,13 +442,7 @@
           37.549348
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -677,13 +454,7 @@
           37.702087
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -695,13 +466,7 @@
           37.434113
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -713,13 +478,7 @@
           37.712326
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -731,13 +490,7 @@
           37.415725
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -749,13 +502,7 @@
           37.630223
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -767,13 +514,7 @@
           37.571271
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -785,13 +526,7 @@
           37.711026
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -803,13 +538,7 @@
           37.65961
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -821,13 +550,7 @@
           37.452759
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -839,13 +562,7 @@
           37.442781
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -857,13 +574,7 @@
           37.74887
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -875,13 +586,7 @@
           37.406067
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     },
     {
       "type": "Feature",
@@ -893,13 +598,7 @@
           37.48498
         ]
       },
-      "properties": {
-        "balloonContentHeader": "<font size=3><b><a target='_blank' href='https://yandex.ru'>Здесь может быть ваша ссылка</a></b></font>",
-        "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input type='submit' value='Отправить'></p>",
-        "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>",
-        "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
-        "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
-      }
+      "img": "spb.svg"
     }
   ]
 }
