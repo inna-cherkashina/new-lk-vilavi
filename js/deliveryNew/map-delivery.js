@@ -53,6 +53,7 @@ function init() {
 
   //~ Слушаем клик на карте.
   myMap.events.add('click', function (e) {
+
     var coords = e.get('coords');
     let deliverySidebar = document.querySelector('.goods-delivery-point__container');
     let courierSidebar = document.querySelector('.goods-courier-point__container');
@@ -76,6 +77,7 @@ function init() {
       });
     }
     getAddress(coords);
+   
   });
 
   //~ Создание метки.
@@ -85,7 +87,8 @@ function init() {
     }, {
       preset: 'islands#violetDotIconWithCaption',
       draggable: true
-    })
+    });
+
   }
 
   //~ Определяем адрес по координатам (обратное геокодирование).
@@ -111,8 +114,8 @@ function init() {
 
 
   let myPlacemark1 = new ymaps.Placemark([55.831903, 37.411961], {
-    hintContent: 'Собственный значок метки',
-    balloonContent: 'Это красивая метка'
+    hintContent: 'Пункт выдачи',
+    balloonContent: 'Это пункт выдачи'
   }, {
     // Опции.
     // Необходимо указать данный тип макета.
@@ -126,8 +129,8 @@ function init() {
     // iconImageOffset: [-5, -38]
   });
   let myPlacemark2 = new ymaps.Placemark([55.763338, 37.565466], {
-    hintContent: 'Собственный значок метки',
-    balloonContent: 'Это красивая метка'
+    hintContent: 'Пункт выдачи',
+    balloonContent: 'Это пункт выдачи'
   }, {
     // Опции.
     // Необходимо указать данный тип макета.
@@ -196,13 +199,24 @@ servisesItems.forEach(function (servisItem) {
 
 let labelForm = document.querySelectorAll('.lable-title');
 let inputAdress = document.querySelectorAll('.input-adress');
+let courierClose = document.querySelector('.courier-close');
+let courierSidebar = document.querySelector('.goods-courier-point__container');
+let deliverySidebar = document.querySelector('.goods-delivery-point__container');
+
 inputAdress.forEach(function (inp) {
   inp.addEventListener('click', function (elem) {
     let target = elem.target;
     console.log(target);
     target.closest('.adress__container').querySelector('.lable-title').classList.add('active-adress');
-  })
+  });
+});
 
+courierClose.addEventListener('click', function () {
+  courierSidebar.classList.remove('courier-section--active');
+  courierSidebar.classList.add('courier-section--disactive');
+  deliverySidebar.classList.remove('courier-section--disactive');
+  deliverySidebar.classList.add('courier-section--active');
 })
+
 
 //^ Адрес доставки курьером форма END
