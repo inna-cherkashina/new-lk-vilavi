@@ -1,8 +1,8 @@
 //^ Карта START
 function init() {
   myMap = new ymaps.Map('map', {
-    center: [55.763338, 37.565466],
-    zoom: 16
+    center: [55.761737880243935, 37.76766184765625],
+    zoom: 11
   }, {
     searchControlProvider: 'yandex#search'
   });
@@ -70,24 +70,31 @@ function init() {
     });
   }
 
-
+  //Вывод всех меток пвз на карту
   (async () => {
     let response = await fetch('./../js/deliveryNew/data.json');
     let categories = await response.json();
-    console.log(categories['features']);
     let itemPVZ = categories['features'];
     itemPVZ.forEach(function (elem) {
       let mark = new ymaps.Placemark(elem.geometry.coordinates, {
         hintContent: 'Собственный значок метки',
-        balloonContent: 'Это красивая метка'
+        // balloonContent: 'Это красивая метка'
       }, {
         iconLayout: 'default#image',
-        iconImageHref: './../images/DeliveryNew/icon-map/dpd-pink.svg',
+        iconImageHref: `./../images/DeliveryNew/icon-map/${elem.img}`,
         iconImageSize: [30, 42],
       }
       );
       myMap.geoObjects.add(mark);
 
+      //Изменение размера метки при наведении на неё
+      mark.events.add('mouseenter', function (e) {
+        e.get('target').options.set('iconImageSize', [40, 42])
+      })
+        .add('mouseleave', function (e) {
+          e.get('target').options.unset('iconImageSize');
+        });;
+      // console.log(mark.options._baseItem._context._options.iconImageHref)
     });
   })()
 }
