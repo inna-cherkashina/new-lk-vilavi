@@ -1,3 +1,9 @@
+let labelForm = document.querySelectorAll('.lable-title');
+let inputAdress = document.querySelectorAll('.input-adress');
+let courierClose = document.querySelector('.courier-close');
+let courierSidebar = document.querySelector('.goods-courier-point__container');
+let deliverySidebar = document.querySelector('.goods-delivery-point__container');
+
 //^ Карта START
 function init() {
   myMap = new ymaps.Map('map', {
@@ -41,14 +47,14 @@ function init() {
   //~ Создание метки.
   function createPlacemark(coords) {
     return new ymaps.Placemark(coords, {
-      iconCaption: 'поиск...'
+      iconCaption: 'поиск...',
+      balloonContent: ''
     }, {
       preset: 'islands#violetDotIconWithCaption',
       draggable: true
     });
-
   }
-
+  let inputCourierAdress = document.querySelector('.adress-street__text');
   //~ Определяем адрес по координатам (обратное геокодирование).
   function getAddress(coords) {
     myPlacemark.properties.set('iconCaption', 'поиск...');
@@ -66,8 +72,16 @@ function init() {
           ].filter(Boolean).join(', '),
           //~ В качестве контента балуна задаем строку с адресом объекта.
           balloonContent: firstGeoObject.getAddressLine()
+
         });
+      console.log(firstGeoObject.getAddressLine());
+      inputCourierAdress.value = firstGeoObject.getAddressLine();
+      labelForm.forEach(function (elem) {
+        elem.classList.add('active-adress');
+      })
+
     });
+
   }
 
   //Вывод всех меток пвз на карту
@@ -147,13 +161,6 @@ servisesItems.forEach(function (servisItem) {
 //^ Служба выдачи END
 
 //^ Адрес доставки курьером форма START
-
-let labelForm = document.querySelectorAll('.lable-title');
-let inputAdress = document.querySelectorAll('.input-adress');
-let courierClose = document.querySelector('.courier-close');
-let courierSidebar = document.querySelector('.goods-courier-point__container');
-let deliverySidebar = document.querySelector('.goods-delivery-point__container');
-
 inputAdress.forEach(function (inp) {
   inp.addEventListener('click', function (elem) {
     let target = elem.target;

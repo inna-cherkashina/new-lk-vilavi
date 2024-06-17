@@ -399,13 +399,17 @@
 
 .courier-adress__street {
   margin: 0px 0px 30px 0px;
+  width: 100%;
 }
 
 .courier-adress__street,
 .piece-of-adress {
   position: relative;
-  width: 170px;
   border-bottom: 1px solid var(--border-color);
+}
+
+.piece-of-adress {
+  width: 170px;
 }
 
 .adress-street__title {
