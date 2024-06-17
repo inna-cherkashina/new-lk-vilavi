@@ -3,6 +3,10 @@ let inputAdress = document.querySelectorAll('.input-adress');
 let courierClose = document.querySelector('.courier-close');
 let courierSidebar = document.querySelector('.goods-courier-point__container');
 let deliverySidebar = document.querySelector('.goods-delivery-point__container');
+let servise = document.querySelector('.point-list');
+let servisesArrow = document.querySelector('.point-list img');
+let serviseList = document.querySelector('.point-list__scroll-box');
+let serviseCross = document.querySelector('.cross-img');
 
 //^ Карта START
 function init() {
@@ -19,9 +23,6 @@ function init() {
   myMap.events.add('click', function (e) {
 
     var coords = e.get('coords');
-    let deliverySidebar = document.querySelector('.goods-delivery-point__container');
-    let courierSidebar = document.querySelector('.goods-courier-point__container');
-
     deliverySidebar.classList.add('delivery-section--disactive');
     deliverySidebar.classList.remove('delivery-section--active');
     courierSidebar.classList.add('courier-section--active');
@@ -106,7 +107,7 @@ function init() {
         e.get('target').options.set('iconImageSize', [40, 42])
       })
         .add('mouseleave', function (e) {
-          e.get('target').options.unset('iconImageSize');
+          e.get('target').options.unset('iconImageSize', [30, 42]);
         });;
     });
   })()
@@ -129,11 +130,6 @@ mapBox.onmousemove = function (e) {
 //^ Чёрная клизма, бегающая за курсором на карте END
 
 //^Служба выдачи START
-let servise = document.querySelector('.point-list');
-let servisesArrow = document.querySelector('.point-list img');
-let serviseList = document.querySelector('.point-list__scroll-box');
-let serviseCross = document.querySelector('.cross-img');
-
 servise.addEventListener('click', function (e) {
   e.preventDefault();
   servisesArrow.classList.add('rotaite');
