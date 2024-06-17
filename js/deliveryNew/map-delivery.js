@@ -108,7 +108,6 @@ function init() {
         .add('mouseleave', function (e) {
           e.get('target').options.unset('iconImageSize');
         });;
-      // console.log(mark.options._baseItem._context._options.iconImageHref)
     });
   })()
 }
