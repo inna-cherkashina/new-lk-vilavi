@@ -77,3 +77,14 @@
 .ymaps-2-1-79-searchbox-input.ymaps-2-1-79-_focused {
   box-shadow: none !important;
 }
+
+.ymaps-2-1-79-image {
+  z-index: 10000;
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+.ymaps-2-1-79-image:hover {
+  width: 50px !important;
+
+}

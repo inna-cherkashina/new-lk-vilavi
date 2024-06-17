@@ -303,6 +303,24 @@
   -o-border-radius: 6px;
 }
 
+.delivery-close {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  z-index: 200;
+  top: 17px;
+  right: 40px;
+}
+
+.delivery-close img {
+  display: block;
+  width: 20px;
+}
+
 /* !===Блок открывающий подробную информацию о пунктах выдачи END== */
 
 /* !===Блок доставки курьером  START===*/
@@ -484,8 +502,26 @@
 
 .courier-section--active {
   display: block;
+
 }
 
+.courier-close {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  z-index: 200;
+  top: 17px;
+  right: 40px;
+}
+
+.courier-close img {
+  display: block;
+  width: 20px;
+}
 
 .courier-section--disactive {
   display: none;
