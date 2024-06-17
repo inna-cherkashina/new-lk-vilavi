@@ -1,45 +1,3 @@
-const categoriesData = {
-  features: [
-    {
-      "type": "Feature",
-      "id": 0,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          55.831903,
-          37.411961
-        ]
-      },
-      "img": "spb.svg"
-    },
-    {
-      "type": "Feature",
-      "id": 1,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          55.763338,
-          37.565466
-        ]
-      },
-      "img": "spb.svg"
-    },
-    {
-      "type": "Feature",
-      "id": 2,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          55.763338,
-          37.565466
-        ]
-      },
-      "img": "spb.svg"
-    }
-  ]
-};
-
-
 //^ Карта START
 function init() {
   myMap = new ymaps.Map('map', {
@@ -77,7 +35,7 @@ function init() {
       });
     }
     getAddress(coords);
-   
+
   });
 
   //~ Создание метки.
@@ -113,39 +71,25 @@ function init() {
   }
 
 
-  let myPlacemark1 = new ymaps.Placemark([55.831903, 37.411961], {
-    hintContent: 'Пункт выдачи',
-    balloonContent: 'Это пункт выдачи'
-  }, {
-    // Опции.
-    // Необходимо указать данный тип макета.
-    iconLayout: 'default#image',
-    // Своё изображение иконки метки.
-    iconImageHref: './../images/DeliveryNew/icon-map/dpd-pink.svg',
-    // Размеры метки.
-    iconImageSize: [30, 42],
-    // Смещение левого верхнего угла иконки относительно
-    // её "ножки" (точки привязки).
-    // iconImageOffset: [-5, -38]
-  });
-  let myPlacemark2 = new ymaps.Placemark([55.763338, 37.565466], {
-    hintContent: 'Пункт выдачи',
-    balloonContent: 'Это пункт выдачи'
-  }, {
-    // Опции.
-    // Необходимо указать данный тип макета.
-    iconLayout: 'default#image',
-    // Своё изображение иконки метки.
-    iconImageHref: './../images/DeliveryNew/icon-map/dpd-pink.svg',
-    // Размеры метки.
-    iconImageSize: [30, 42],
-    // Смещение левого верхнего угла иконки относительно
-    // её "ножки" (точки привязки).
-    // iconImageOffset: [-5, -38]
-  })
-  myMap.geoObjects
-    .add(myPlacemark1)
-    .add(myPlacemark2);
+  (async () => {
+    let response = await fetch('./../js/deliveryNew/data.json');
+    let categories = await response.json();
+    console.log(categories['features']);
+    let itemPVZ = categories['features'];
+    itemPVZ.forEach(function (elem) {
+      let mark = new ymaps.Placemark(elem.geometry.coordinates, {
+        hintContent: 'Собственный значок метки',
+        balloonContent: 'Это красивая метка'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: './../images/DeliveryNew/icon-map/dpd-pink.svg',
+        iconImageSize: [30, 42],
+      }
+      );
+      myMap.geoObjects.add(mark);
+
+    });
+  })()
 }
 ymaps.ready(init);
 
