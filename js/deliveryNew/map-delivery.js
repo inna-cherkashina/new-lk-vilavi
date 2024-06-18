@@ -222,6 +222,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let servisesItems = document.querySelectorAll('.goods-delivery-point__item');
   console.log(servisesItems);
   servisesItems.forEach(function (servisItem) {
+    //воткнуть этот элемент в функцию createDeliveryPoint
     servisItem.addEventListener('click', function (elem) {
       let target = elem.target;
       target.closest('.goods-delivery-point__item').querySelector('.description-more').classList.toggle('description-more--disactive');
