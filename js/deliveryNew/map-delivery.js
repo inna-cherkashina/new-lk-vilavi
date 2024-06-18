@@ -1,3 +1,4 @@
+
 let labelForm = document.querySelectorAll('.lable-title');
 let inputAdress = document.querySelectorAll('.input-adress');
 let courierClose = document.querySelector('.courier-close');
@@ -11,7 +12,7 @@ let serviseCross = document.querySelector('.cross-img');
 //^ Карта START
 function init() {
   myMap = new ymaps.Map('map', {
-    center: [55.761737880243935, 37.76766184765625],
+    center: [55.082379, 82.967663],
     zoom: 11
   }, {
     searchControlProvider: 'yandex#search'
@@ -54,7 +55,9 @@ function init() {
       preset: 'islands#violetDotIconWithCaption',
       draggable: true
     });
+
   }
+
   let inputCourierAdress = document.querySelector('.adress-street__text');
   //~ Определяем адрес по координатам (обратное геокодирование).
   function getAddress(coords) {
@@ -75,28 +78,32 @@ function init() {
           balloonContent: firstGeoObject.getAddressLine()
 
         });
-      console.log(firstGeoObject.getAddressLine());
       inputCourierAdress.value = firstGeoObject.getAddressLine();
       labelForm.forEach(function (elem) {
         elem.classList.add('active-adress');
       })
-
     });
-
+    //Удаление розовой клизмы по клику на крестик в курьерской доставке
+    courierClose.addEventListener('click', function () {
+      myMap.geoObjects.remove(myPlacemark);
+    });
+    //Возвращение розовой клизмы по клику на карту
+    myMap.events.add("click", function (e) {
+      myMap.geoObjects.add(myPlacemark);
+    })
   }
 
   //Вывод всех меток пвз на карту
   (async () => {
-    let response = await fetch('./../js/deliveryNew/data.json');
+    let response = await fetch('./../js/deliveryNew/backoffice_dev_dbo_DeliveryCityPoints.json');
     let categories = await response.json();
-    let itemPVZ = categories['features'];
-    itemPVZ.forEach(function (elem) {
-      let mark = new ymaps.Placemark(elem.geometry.coordinates, {
-        hintContent: 'Собственный значок метки',
+    categories.forEach(function (elem) {
+      let mark = new ymaps.Placemark([elem.Latitude, elem.Longitude], {
+        hintContent: elem.WorkTime,
         // balloonContent: 'Это красивая метка'
       }, {
         iconLayout: 'default#image',
-        iconImageHref: `./../images/DeliveryNew/icon-map/${elem.img}`,
+        iconImageHref: `./../images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`,
         iconImageSize: [30, 42],
       }
       );
@@ -108,7 +115,17 @@ function init() {
       })
         .add('mouseleave', function (e) {
           e.get('target').options.unset('iconImageSize', [30, 42]);
-        });;
+        });
+      //Удаление розовой клизмы по клику на ПВЗ в курьерской доставке  
+      mark.events.add('click', function (e) {
+        myMap.geoObjects.remove(myPlacemark);
+        courierSidebar.classList.remove('courier-section--active');
+        courierSidebar.classList.add('courier-section--disactive');
+        deliverySidebar.classList.remove('courier-section--disactive');
+        deliverySidebar.classList.add('courier-section--active');
+        console.log(mark);
+      });
+      createDeliveryPoint(elem.DeliveryCompany, elem.Street, elem.House, elem.City, elem.DeliveryCost, elem.WorkTime);
     });
   })()
 }
@@ -129,6 +146,8 @@ mapBox.onmousemove = function (e) {
 }
 //^ Чёрная клизма, бегающая за курсором на карте END
 
+
+
 //^Служба выдачи START
 servise.addEventListener('click', function (e) {
   e.preventDefault();
@@ -141,18 +160,75 @@ serviseCross.addEventListener('click', function (e) {
   servisesArrow.classList.remove('rotaite');
   servise.classList.remove('point-list--active');
   serviseList.classList.remove('point-list__scroll-box--active');
-
 });
 
-let servisesItems = document.querySelectorAll('.goods-delivery-point__item');
-servisesItems.forEach(function (servisItem) {
-  servisItem.addEventListener('click', function (elem) {
-    let target = elem.target;
-    target.closest('.goods-delivery-point__item').querySelector('.description-more').classList.toggle('description-more--disactive');
-    servisItem.classList.toggle('goods-delivery-point__item--active');
-  })
+//^ Создание блока с информацией о ПВЗ START
+let scrollContainer = document.querySelector('.scroll-delivery__container');
+function createDeliveryPoint(imgPVZ, streetPVZ, housePVZ, cityPVZ, deliveryCostVPZ, workTimePVZ) {
+  let containerItem = document.createElement('div');
+  containerItem.className = "goods-delivery-point__item";
+  containerItem.innerHTML = `
+          <div class="flag">забрать сегодня</div>
+            <div class="center-sidebar">
+              <div class="delivery-point__box">
+                <div class="point-logo">
+                  <img src="./images/DeliveryNew/delivery-point/${imgPVZ}.svg" alt="logo">
+                </div>
+                <div class="point-adress">
+                  ${streetPVZ} ${housePVZ}</br>
+                  ${cityPVZ}
+                </div>
+                <div class="point-cost">стоимость — от ${deliveryCostVPZ} ₽</div>
+                <div class="point-data-delivery">
+                  дата доставки — <span class="day-week">сегодня</span>, <span class="data">16 мая</span>
+                </div>
+                <div class="description-more description-more--disactive">
+                  <div class="point-description__container">
+                    <div class="point-description__title">
+                      режим работы
+                    </div>
+                    <div class="point-description__text">
+                      ${workTimePVZ} <br>
+                    </div>
+                  </div>
+                  <div class="point-description__container">
+                    <div class="point-description__title">
+                      контактный телефон
+                    </div>
+                    <div class="point-description__text">
+                      8-800-234-80-00
+                    </div>
+                  </div>
+                  <div class="point-description__container">
+                    <div class="point-description__title">
+                      как добраться
+                    </div>
+                    <div class="point-description__text">
+                      метро - березовая роща. какой выход из метро - второй. остановка - красина. примерное расстояние
+                      от остановки до отделения - 100 м. 5-этажный жилой дом. 1 этаж. вход со двора. сервисный центр
+                      фотон.
+                    </div>
+                  </div>
+                  <div class="point-description__container">
+                    <a href="./delivery.html" class="point-description__button">Заберу отсюда</a>
+                  </div>
+                </div>
+              </div>
+            </div>`;
+  scrollContainer.append(containerItem);
+}
+//^ Создание блока с информацией о ПВЗ END
+document.addEventListener("DOMContentLoaded", () => {
+  let servisesItems = document.querySelectorAll('.goods-delivery-point__item');
+  console.log(servisesItems);
+  servisesItems.forEach(function (servisItem) {
+    servisItem.addEventListener('click', function (elem) {
+      let target = elem.target;
+      target.closest('.goods-delivery-point__item').querySelector('.description-more').classList.toggle('description-more--disactive');
+      servisItem.classList.toggle('goods-delivery-point__item--active');
+    })
+  });
 });
-
 //^ Служба выдачи END
 
 //^ Адрес доставки курьером форма START
@@ -169,7 +245,8 @@ courierClose.addEventListener('click', function () {
   courierSidebar.classList.add('courier-section--disactive');
   deliverySidebar.classList.remove('courier-section--disactive');
   deliverySidebar.classList.add('courier-section--active');
-})
-
+});
 
 //^ Адрес доставки курьером форма END
+
+
