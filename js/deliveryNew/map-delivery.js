@@ -236,7 +236,6 @@ function init() {
           else {
             e.get('target').options.unset('iconImageSize', [40, 42]);
             e.get('target').options.set('iconImageHref', `./../images/DeliveryNew/icon-map/${elem.DeliveryCompany}-coral.svg`);
-
           }
         });
 
@@ -244,7 +243,6 @@ function init() {
         clickMarker = true;
         e.get('target').options.set('iconImageSize', [40, 42]);
         e.get('target').options.set('iconImageHref', `./../images/DeliveryNew/icon-map/${elem.DeliveryCompany}-coral.svg`);
-
       });
 
 
