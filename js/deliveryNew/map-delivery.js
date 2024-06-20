@@ -208,7 +208,7 @@ function init() {
 
   //Вывод всех меток пвз на карту
   (async () => {
-    let response = await fetch('./../js/deliveryNew/backoffice_dev_dbo_DeliveryCityPoints.json');
+    let response = await fetch('https://inna-cherkashina.github.io/new-lk-vilavi/js/deliveryNew/backoffice_dev_dbo_DeliveryCityPoints.json');
     let categories = await response.json();
     categories.forEach(function (elem) {
       let mark = new ymaps.Placemark([elem.Latitude, elem.Longitude], {
