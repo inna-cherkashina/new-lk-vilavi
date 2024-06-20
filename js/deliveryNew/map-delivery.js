@@ -216,8 +216,8 @@ function init() {
         // balloonContent: 'Это красивая метка'
       }, {
         iconLayout: 'default#image',
-        iconImageHref: `./../images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`,
-        iconImageSize: [30, 42],
+        iconImageHref: `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`,
+        iconImageSize: [54, 35],
       }
       );
       myMap.geoObjects.add(mark);
@@ -225,24 +225,24 @@ function init() {
       let clickMarker = false;
       //Изменение размера метки при наведении на неё
       mark.events.add('mouseenter', function (e) {
-        e.get('target').options.set('iconImageSize', [40, 42]);
-        e.get('target').options.set('iconImageHref', `./../images/DeliveryNew/icon-map/${elem.DeliveryCompany}-coral.svg`);
+        e.get('target').options.set('iconImageSize', [54, 35]);
+        e.get('target').options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}-coral.svg`);
       })
         .add('mouseleave', function (e) {
           if (clickMarker == false) {
-            e.get('target').options.unset('iconImageSize', [30, 42]);
-            e.get('target').options.set('iconImageHref', `./../images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
+            e.get('target').options.unset('iconImageSize', [54, 35]);
+            e.get('target').options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
           }
           else {
-            e.get('target').options.unset('iconImageSize', [40, 42]);
-            e.get('target').options.set('iconImageHref', `./../images/DeliveryNew/icon-map/${elem.DeliveryCompany}-coral.svg`);
+            e.get('target').options.unset('iconImageSize', [54, 35]);
+            e.get('target').options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}-coral.svg`);
           }
         });
 
       mark.events.add('click', function (e) {
         clickMarker = true;
-        e.get('target').options.set('iconImageSize', [40, 42]);
-        e.get('target').options.set('iconImageHref', `./../images/DeliveryNew/icon-map/${elem.DeliveryCompany}-coral.svg`);
+        e.get('target').options.set('iconImageSize', [54, 35]);
+        e.get('target').options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}-coral.svg`);
       });
 
 
