@@ -125,14 +125,18 @@ function createOpenInfoDeliveryPoint(imgPVZ, streetPVZ, housePVZ, cityPVZ, deliv
 //^ Карта START
 function init() {
   myMap = new ymaps.Map('map', {
-    center: [55.082379, 82.967663],
-    zoom: 11
+    center: [55.04702044, 82.91153166],
+    zoom: 15
   }, {
     searchControlProvider: 'yandex#search'
   });
 
-  var myPlacemark;
+  //^ Создаём кластеры START 
+  // clusterer = new ymaps.Clusterer({})
+  //^ Создаём кластеры END 
 
+
+  var myPlacemark;
   //~ Слушаем клик на карте.
   myMap.events.add('click', function (e) {
 
@@ -218,6 +222,7 @@ function init() {
         iconLayout: 'default#image',
         iconImageHref: `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`,
         iconImageSize: [38, 24],
+        iconImageOffset: [-19, -12]
       }
       );
       myMap.geoObjects.add(mark);
@@ -225,24 +230,31 @@ function init() {
       let clickMarker = false;
       //Изменение размера метки при наведении на неё
       mark.events.add('mouseenter', function (e) {
-        e.get('target').options.set('default#image', [54, 35]);
+        e.get('target').options.set('iconImageSize', [54, 35]);
+        e.get('target').options.set('iconImageOffset', [-27, -17]);
         e.get('target').options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}-coral.svg`);
       })
         .add('mouseleave', function (e) {
           if (clickMarker == false) {
-            e.get('target').options.unset('default#image', [38, 24]);
+            e.get('target').options.set('iconImageSize', [38, 24]);
+            e.get('target').options.set('iconImageOffset', [-19, -12]);
             e.get('target').options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
+            console.log(clickMarker);
           }
           else {
-            e.get('target').options.unset('default#image', [54, 35]);
+            e.get('target').options.set('iconImageSize', [54, 35]);
             e.get('target').options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}-coral.svg`);
+            console.log(clickMarker);
           }
         });
 
       mark.events.add('click', function (e) {
+        // let markIconImgHref = mark.options._options.iconImageHref;
         clickMarker = true;
         e.get('target').options.set('iconImageSize', [54, 35]);
+        e.get('target').options.set('iconImageOffset', [-27, -17]);
         e.get('target').options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}-coral.svg`);
+        console.log(clickMarker);
       });
 
 
@@ -334,7 +346,6 @@ serviseCross.addEventListener('click', function (e) {
   servise.classList.remove('point-list--active');
   serviseList.classList.remove('point-list__scroll-box--active');
 });
-
 //^ Служба выдачи END
 
 //^ Адрес доставки курьером форма START
@@ -352,6 +363,27 @@ courierClose.addEventListener('click', function () {
   deliverySidebar.classList.add('courier-section--active');
 });
 
+
+let svgElementCourier = document.querySelectorAll('.svg-element-courier');
+let courierDeliveryItems = document.querySelectorAll('.goods-courier-point__item');
+courierDeliveryItems.forEach(function (item) {
+  item.addEventListener('click', function (elem) {
+    disabledNav(svgElementCourier);
+    let target = elem.target;
+    target.closest('.goods-courier-point__item').querySelector('.svg-element-courier').classList.toggle('svg-element-courier--active')
+  })
+});
+
+//Сброс стилей у неактивных табов при клике
+function disabledNav(blocks) {
+  blocks.forEach(function (el) {
+    el.classList.remove('svg-element-courier--active');
+  });
+}
+
+
 //^ Адрес доставки курьером форма END
+
+
 
 

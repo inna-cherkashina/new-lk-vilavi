@@ -376,6 +376,10 @@
   cursor: pointer;
 }
 
+.svg-element-courier--active {
+  fill: var(--other-color);
+}
+
 .courier-point__box {
   padding: 10px 0px 20px 0px;
   border-bottom: 1px solid var(--border-color);
