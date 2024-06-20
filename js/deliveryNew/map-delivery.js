@@ -217,7 +217,7 @@ function init() {
       }, {
         iconLayout: 'default#image',
         iconImageHref: `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`,
-        iconImageSize: [54, 35],
+        iconImageSize: [38, 24],
       }
       );
       myMap.geoObjects.add(mark);
@@ -225,16 +225,16 @@ function init() {
       let clickMarker = false;
       //Изменение размера метки при наведении на неё
       mark.events.add('mouseenter', function (e) {
-        e.get('target').options.set('iconImageSize', [54, 35]);
+        e.get('target').options.set('default#image', [54, 35]);
         e.get('target').options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}-coral.svg`);
       })
         .add('mouseleave', function (e) {
           if (clickMarker == false) {
-            e.get('target').options.unset('iconImageSize', [54, 35]);
+            e.get('target').options.unset('default#image', [38, 24]);
             e.get('target').options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
           }
           else {
-            e.get('target').options.unset('iconImageSize', [54, 35]);
+            e.get('target').options.unset('default#image', [54, 35]);
             e.get('target').options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}-coral.svg`);
           }
         });
