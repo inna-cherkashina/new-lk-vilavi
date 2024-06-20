@@ -373,6 +373,7 @@
 
 .goods-courier-point__item {
   margin: 0px 0px 20px 0px;
+  cursor: pointer;
 }
 
 .courier-point__box {
