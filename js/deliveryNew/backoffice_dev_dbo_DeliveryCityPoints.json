@@ -10,7 +10,7 @@
     "Street": "Богдана Хмельницкого ул",
     "House": "д.80",
     "FullAddress": "630110, Новосибирск г, Богдана Хмельницкого ул, д.80",
-    "DeliveryTime": 5,
+    "DeliveryTime": 1,
     "DeliveryCost": 300
   },
   {
@@ -24,7 +24,7 @@
     "Street": "Дачная ул",
     "House": "д.33",
     "FullAddress": "630082, Новосибирск г, Дачная ул, д.33",
-    "DeliveryTime": 5,
+    "DeliveryTime": 1,
     "DeliveryCost": 300
   },
   {
@@ -38,7 +38,7 @@
     "Street": "Кубовая ул",
     "House": "д.103/2",
     "FullAddress": "630040, Новосибирск г, Кубовая ул, д.103/2",
-    "DeliveryTime": 5,
+    "DeliveryTime": 1,
     "DeliveryCost": 300
   },
   {
@@ -52,7 +52,7 @@
     "Street": "Красный пр-кт",
     "House": "д.318",
     "FullAddress": "630061, Новосибирск г, Красный пр-кт, д.318",
-    "DeliveryTime": 5,
+    "DeliveryTime": 1,
     "DeliveryCost": 100
   },
   {
@@ -66,7 +66,7 @@
     "Street": "Серебренниковская ул",
     "House": "д.14",
     "FullAddress": "630007, Новосибирск г, Серебренниковская ул, д.14",
-    "DeliveryTime": 5,
+    "DeliveryTime": 1,
     "DeliveryCost": 100
   },
   {
@@ -80,7 +80,7 @@
     "Street": "Красный пр-кт",
     "House": "д.218/2",
     "FullAddress": "630049, Новосибирск г, Красный пр-кт, д.218/2",
-    "DeliveryTime": 5,
+    "DeliveryTime": 1,
     "DeliveryCost": 250
   },
   {
@@ -94,7 +94,7 @@
     "Street": "Пермская ул",
     "House": "д.27",
     "FullAddress": "630136, Новосибирск г, Пермская ул, д.27",
-    "DeliveryTime": 5,
+    "DeliveryTime": 1,
     "DeliveryCost": 100
   },
   {
@@ -108,7 +108,7 @@
     "Street": "Галущака ул",
     "House": "д.1",
     "FullAddress": "630049, Новосибирск г, Галущака ул, д.1",
-    "DeliveryTime": 5,
+    "DeliveryTime": 1,
     "DeliveryCost": 250
   },
   {
@@ -122,7 +122,7 @@
     "Street": "Балтийская ул",
     "House": "д.29",
     "FullAddress": "630058, Новосибирск г, Балтийская ул, д.29",
-    "DeliveryTime": 5,
+    "DeliveryTime": 1,
     "DeliveryCost": 100
   },
   {
@@ -136,7 +136,7 @@
     "Street": "Театральная ул",
     "House": "д.33",
     "FullAddress": "630110, Новосибирск г, Театральная ул, д.33",
-    "DeliveryTime": 5,
+    "DeliveryTime": 1,
     "DeliveryCost": 250
   },
   {
@@ -1270,7 +1270,7 @@
     "Street": "ул Александра Чистякова",
     "House": "д. 20",
     "FullAddress": "ул Александра Чистякова, д. 20 Время работы: Пн,Вт,Ср,Чт,Пт,Сб,Вс с 09:00 - 21:00.",
-    "DeliveryTime": 0,
+    "DeliveryTime": 5,
     "DeliveryCost": 200
   },
   {
@@ -1284,7 +1284,7 @@
     "Street": "ул Воинская",
     "House": "д. 21",
     "FullAddress": "ул Воинская, д. 21 Время работы: Пн,Вт,Ср,Чт,Пт,Сб,Вс с 10:00 - 19:59.",
-    "DeliveryTime": 0,
+    "DeliveryTime": 5,
     "DeliveryCost": 200
   },
   {
@@ -1298,7 +1298,7 @@
     "Street": "ул Немировича-Данченко",
     "House": "д. 2",
     "FullAddress": "ул Немировича-Данченко, д. 2 Время работы: Пн,Вт,Ср,Чт,Пт с 09:00 - 21:00, Сб,Вс с 10:00 - 20:00.",
-    "DeliveryTime": 0,
+    "DeliveryTime": 5,
     "DeliveryCost": 200
   },
   {
@@ -1326,7 +1326,7 @@
     "Street": "ул Широкая",
     "House": "д. 113/2",
     "FullAddress": "ул Широкая, д. 113/2 Время работы: Пн,Вс выходной, Вт,Ср,Чт,Пт,Сб с 10:00 - 20:00.",
-    "DeliveryTime": 0,
+    "DeliveryTime": 5,
     "DeliveryCost": 200
   },
   {
@@ -1340,7 +1340,7 @@
     "Street": "ул Ватутина",
     "House": "д. 24",
     "FullAddress": "ул Ватутина, д. 24 Время работы: Пн,Вт,Ср,Чт,Пт,Сб,Вс с 09:00 - 21:00.",
-    "DeliveryTime": 0,
+    "DeliveryTime": 5,
     "DeliveryCost": 200
   },
   {
@@ -1354,7 +1354,7 @@
     "Street": "ул Гоголя",
     "House": "д. 209",
     "FullAddress": "ул Гоголя, д. 209 Время работы: Пн,Вт,Ср,Чт,Пт,Сб,Вс с 10:00 - 19:59.",
-    "DeliveryTime": 0,
+    "DeliveryTime": 5,
     "DeliveryCost": 200
   },
   {
@@ -1382,7 +1382,7 @@
     "Street": "ул Героев Революции",
     "House": "д. 44",
     "FullAddress": "ул Героев Революции, д. 44 Время работы: Пн,Вт,Ср,Чт,Пт,Сб,Вс с 09:00 - 21:00.",
-    "DeliveryTime": 0,
+    "DeliveryTime": 5,
     "DeliveryCost": 200
   },
   {
@@ -1396,7 +1396,7 @@
     "Street": "ул Театральная",
     "House": "д. 33",
     "FullAddress": "ул Театральная, д. 33 Время работы: Пн,Вт,Ср,Чт,Пт,Сб,Вс с 09:00 - 21:00.",
-    "DeliveryTime": 0,
+    "DeliveryTime": 5,
     "DeliveryCost": 200
   },
   {
@@ -1410,7 +1410,7 @@
     "Street": "ул Чулымская 1-я",
     "House": "д. 117",
     "FullAddress": "ул Чулымская 1-я, д. 117 Время работы: Пн,Вт,Ср,Чт,Пт,Сб,Вс с 09:00 - 21:00.",
-    "DeliveryTime": 0,
+    "DeliveryTime": 5,
     "DeliveryCost": 200
   },
   {
@@ -1424,7 +1424,7 @@
     "Street": "пр-кт Красный",
     "House": "д. 13",
     "FullAddress": "пр-кт Красный, д. 13 Время работы: Пн,Вт,Ср,Чт,Пт,Сб,Вс с 09:00 - 21:00.",
-    "DeliveryTime": 0,
+    "DeliveryTime": 5,
     "DeliveryCost": 200
   },
   {
@@ -1452,7 +1452,7 @@
     "Street": "ул Авиастроителей",
     "House": "д. 1/5",
     "FullAddress": "ул Авиастроителей, д. 1/5 Время работы: Пн,Вт,Ср,Чт,Пт,Сб,Вс с 10:00 - 21:00.",
-    "DeliveryTime": 0,
+    "DeliveryTime": 5,
     "DeliveryCost": 200
   },
   {
@@ -1466,7 +1466,7 @@
     "Street": "ул Курчатова",
     "House": "д. 11",
     "FullAddress": "ул Курчатова, д. 11 Время работы: Пн,Вт,Ср,Чт,Пт,Сб,Вс с 09:00 - 20:30.",
-    "DeliveryTime": 0,
+    "DeliveryTime": 5,
     "DeliveryCost": 200
   },
   {
@@ -1480,7 +1480,7 @@
     "Street": "ул Зорге",
     "House": "д. 227А",
     "FullAddress": "ул Зорге, д. 227А Время работы: Пн,Вт,Ср,Чт,Пт,Сб,Вс с 10:00 - 20:00.",
-    "DeliveryTime": 0,
+    "DeliveryTime": 5,
     "DeliveryCost": 200
   },
   {

@@ -250,9 +250,8 @@ function init() {
             console.log(clickMarker);
           }
         });
-      let markIconImgHref = mark.options._options.iconImageHref;
+      // let markIconImgHref = mark.options._options.iconImageHref;
       mark.events.add('click', function (e) {
-
         clickMarker = true;
         e.get('target').options.set('iconImageSize', [54, 35]);
         e.get('target').options.set('iconImageOffset', [-27, -17]);
@@ -261,19 +260,27 @@ function init() {
       });
 
       quikText.addEventListener('click', function () {
+        mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
         switchElement.classList.add('quik-active');
         switchElement.classList.remove('cheap-active');
-        if (elem.DeliveryTime == 0) {
+        if (elem.DeliveryTime < 5) {
           mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}-blue.svg`);
+        }
+        else {
+          mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
         }
 
       })
       cheapText.addEventListener('click', function () {
+        mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
         switchElement.classList.remove('quik-active');
         switchElement.classList.add('cheap-active');
-        if (elem.DeliveryCost == 300) {
+        console.log(elem);
+        if (elem.DeliveryCost <= 200) {
           mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}-blue.svg`);
-          console.log(elem.DeliveryCost);
+        }
+        else {
+          mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
         }
 
       })
