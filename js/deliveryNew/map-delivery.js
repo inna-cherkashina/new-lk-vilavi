@@ -229,28 +229,26 @@ function init() {
       }
       );
       myMap.geoObjects.add(mark);
-
+      let markIconImgHref = mark.options._options.iconImageHref;
       let clickMarker = false;
       //Изменение размера метки при наведении на неё
       mark.events.add('mouseenter', function (e) {
-        e.get('target').options.set('iconImageSize', [54, 35]);
-        e.get('target').options.set('iconImageOffset', [-27, -17]);
-        e.get('target').options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}-coral.svg`);
+          e.get('target').options.set('iconImageSize', [54, 35]);
+          e.get('target').options.set('iconImageOffset', [-27, -17]);
+          e.get('target').options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}-coral.svg`);
       })
         .add('mouseleave', function (e) {
           if (clickMarker == false) {
-            e.get('target').options.set('iconImageSize', [38, 24]);
-            e.get('target').options.set('iconImageOffset', [-19, -12]);
-            e.get('target').options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
-            console.log(clickMarker);
-          }
+              e.get('target').options.set('iconImageSize', [38, 24]);
+              e.get('target').options.set('iconImageOffset', [-19, -12]);
+              e.get('target').options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
+            }
           else {
             e.get('target').options.set('iconImageSize', [54, 35]);
             e.get('target').options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}-coral.svg`);
-            console.log(clickMarker);
           }
         });
-      // let markIconImgHref = mark.options._options.iconImageHref;
+
       mark.events.add('click', function (e) {
         clickMarker = true;
         e.get('target').options.set('iconImageSize', [54, 35]);
@@ -259,6 +257,13 @@ function init() {
         console.log(clickMarker);
       });
 
+      //^Фильтруем пункты выдачи быстро/дёшево START
+      if (elem.DeliveryTime < 5) {
+        mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}-blue.svg`);
+      }
+      else {
+        mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
+      }
       quikText.addEventListener('click', function () {
         mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
         switchElement.classList.add('quik-active');
@@ -275,15 +280,14 @@ function init() {
         mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
         switchElement.classList.remove('quik-active');
         switchElement.classList.add('cheap-active');
-        console.log(elem);
         if (elem.DeliveryCost <= 200) {
           mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}-blue.svg`);
         }
         else {
           mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
         }
-
-      })
+      });
+      //^Фильтруем пункты выдачи быстро/дёшево END
 
       //Удаление розовой клизмы по клику на ПВЗ в курьерской доставке  
       mark.events.add('click', function (e) {
