@@ -1,3 +1,69 @@
+/* Блок с переключателем START*/
+.quick-cheap-switch__container {
+  cursor: pointer;
+  position: absolute;
+  width: 170px;
+  height: 35px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  z-index: 5000;
+  background: #ffffff;
+  top: 40px;
+  right: 533px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 50%);
+}
+
+.quik-text {
+  font-size: var(--fsz-mini);
+  font-weight: var(--fw-medium);
+}
+
+.switch__box {
+  width: 26px;
+  height: 12px;
+  background: var(--border-color);
+  position: relative;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.switch-element {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: -1px;
+  background: var(--main-color);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.cheap-text {
+  font-size: var(--fsz-mini);
+  font-weight: var(--fw-medium);
+}
+
+.cheap-active {
+  right: 0px;
+}
+
+.quik-active {
+  left: 0px;
+}
+
+/* Блок с переключателем END*/
+
 /* !Выбор пунктов выдачи */
 .main-map__wrapper {
   position: relative;

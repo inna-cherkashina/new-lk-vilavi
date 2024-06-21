@@ -11,7 +11,7 @@
     "House": "д.80",
     "FullAddress": "630110, Новосибирск г, Богдана Хмельницкого ул, д.80",
     "DeliveryTime": 5,
-    "DeliveryCost": 250
+    "DeliveryCost": 300
   },
   {
     "id": 2527,
@@ -25,7 +25,7 @@
     "House": "д.33",
     "FullAddress": "630082, Новосибирск г, Дачная ул, д.33",
     "DeliveryTime": 5,
-    "DeliveryCost": 250
+    "DeliveryCost": 300
   },
   {
     "id": 2528,
@@ -39,7 +39,7 @@
     "House": "д.103/2",
     "FullAddress": "630040, Новосибирск г, Кубовая ул, д.103/2",
     "DeliveryTime": 5,
-    "DeliveryCost": 250
+    "DeliveryCost": 300
   },
   {
     "id": 2529,
@@ -53,7 +53,7 @@
     "House": "д.318",
     "FullAddress": "630061, Новосибирск г, Красный пр-кт, д.318",
     "DeliveryTime": 5,
-    "DeliveryCost": 250
+    "DeliveryCost": 100
   },
   {
     "id": 2530,
@@ -67,7 +67,7 @@
     "House": "д.14",
     "FullAddress": "630007, Новосибирск г, Серебренниковская ул, д.14",
     "DeliveryTime": 5,
-    "DeliveryCost": 250
+    "DeliveryCost": 100
   },
   {
     "id": 2531,
@@ -95,7 +95,7 @@
     "House": "д.27",
     "FullAddress": "630136, Новосибирск г, Пермская ул, д.27",
     "DeliveryTime": 5,
-    "DeliveryCost": 250
+    "DeliveryCost": 100
   },
   {
     "id": 2549,
@@ -123,7 +123,7 @@
     "House": "д.29",
     "FullAddress": "630058, Новосибирск г, Балтийская ул, д.29",
     "DeliveryTime": 5,
-    "DeliveryCost": 250
+    "DeliveryCost": 100
   },
   {
     "id": 2551,
@@ -165,7 +165,7 @@
     "House": "д.12",
     "FullAddress": "630126, Новосибирск г, Вилюйская ул, д.12",
     "DeliveryTime": 5,
-    "DeliveryCost": 250
+    "DeliveryCost": 100
   },
   {
     "id": 2554,
@@ -179,7 +179,7 @@
     "House": "д.251а",
     "FullAddress": "630089, Новосибирск г, Бориса Богаткова ул, д.251а",
     "DeliveryTime": 5,
-    "DeliveryCost": 250
+    "DeliveryCost": 100
   },
   {
     "id": 2555,
@@ -207,7 +207,7 @@
     "House": "д.45/1",
     "FullAddress": "630133, Новосибирск г, В.Высоцкого ул, д.45/1",
     "DeliveryTime": 5,
-    "DeliveryCost": 250
+    "DeliveryCost": 100
   },
   {
     "id": 2557,
@@ -235,7 +235,7 @@
     "House": "д.24",
     "FullAddress": "630022, Новосибирск г, Виктора Шевелева ул, д.24",
     "DeliveryTime": 5,
-    "DeliveryCost": 250
+    "DeliveryCost": 100
   },
   {
     "id": 2559,
@@ -249,7 +249,7 @@
     "House": "д.8",
     "FullAddress": "630117, Новосибирск г, Российская ул, д.8",
     "DeliveryTime": 5,
-    "DeliveryCost": 250
+    "DeliveryCost": 100
   },
   {
     "id": 2560,
@@ -263,7 +263,7 @@
     "House": "д.34",
     "FullAddress": "630132, Новосибирск г, Красноярская ул, д.34",
     "DeliveryTime": 5,
-    "DeliveryCost": 250
+    "DeliveryCost": 100
   },
   {
     "id": 2561,
@@ -291,7 +291,7 @@
     "House": "д.14/5",
     "FullAddress": "630088, Новосибирск г, Петухова ул, д.14/5",
     "DeliveryTime": 5,
-    "DeliveryCost": 250
+    "DeliveryCost": 100
   },
   {
     "id": 2578,
@@ -305,7 +305,7 @@
     "House": "д.225",
     "FullAddress": "630063, Новосибирск г, Кирова ул, д.225",
     "DeliveryTime": 5,
-    "DeliveryCost": 250
+    "DeliveryCost": 100
   },
   {
     "id": 2579,
@@ -1089,7 +1089,7 @@
     "House": "д. 4/1",
     "FullAddress": "ул Гребенщикова, д. 4/1 Время работы: Пн,Вт,Ср,Чт,Пт,Сб,Вс с 09:00 - 20:00.",
     "DeliveryTime": 0,
-    "DeliveryCost": 200
+    "DeliveryCost": 100
   },
   {
     "id": 5029,
@@ -1159,7 +1159,7 @@
     "House": "д. 31/2",
     "FullAddress": "ул Есенина, д. 31/2 Время работы: Пн,Вт,Ср,Чт,Пт,Сб,Вс с 09:00 - 21:00.",
     "DeliveryTime": 0,
-    "DeliveryCost": 200
+    "DeliveryCost": 100
   },
   {
     "id": 5443,
@@ -1187,7 +1187,7 @@
     "House": "д. 4",
     "FullAddress": "пр-кт Дзержинского, д. 4 Время работы: Пн,Вт,Ср,Чт,Пт с 09:00 - 19:00, Сб с 10:00 - 16:00, Вс выходной.",
     "DeliveryTime": 0,
-    "DeliveryCost": 200
+    "DeliveryCost": 100
   },
   {
     "id": 5576,
@@ -1229,7 +1229,7 @@
     "House": "д. 16",
     "FullAddress": "ул Большевистская, д. 16 Время работы: Пн,Вт,Ср,Чт,Пт,Сб,Вс с 09:00 - 21:00.",
     "DeliveryTime": 0,
-    "DeliveryCost": 200
+    "DeliveryCost": 100
   },
   {
     "id": 5747,

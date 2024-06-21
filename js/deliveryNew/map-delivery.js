@@ -8,6 +8,9 @@ let servise = document.querySelector('.point-list');
 let servisesArrow = document.querySelector('.point-list img');
 let serviseList = document.querySelector('.point-list__scroll-box');
 let serviseCross = document.querySelector('.cross-img');
+let quikText = document.querySelector('.quik-text');
+let cheapText = document.querySelector('.cheap-text');
+let switchElement = document.querySelector('.switch-element');
 
 //^ Создание блока с информацией о ПВЗ START
 let scrollContainer = document.querySelector('.scroll-delivery__container');
@@ -125,8 +128,8 @@ function createOpenInfoDeliveryPoint(imgPVZ, streetPVZ, housePVZ, cityPVZ, deliv
 //^ Карта START
 function init() {
   myMap = new ymaps.Map('map', {
-    center: [55.04702044, 82.91153166],
-    zoom: 15
+    center: [55.02988088, 83.01854063],
+    zoom: 12
   }, {
     searchControlProvider: 'yandex#search'
   });
@@ -247,9 +250,9 @@ function init() {
             console.log(clickMarker);
           }
         });
-
+      let markIconImgHref = mark.options._options.iconImageHref;
       mark.events.add('click', function (e) {
-        // let markIconImgHref = mark.options._options.iconImageHref;
+
         clickMarker = true;
         e.get('target').options.set('iconImageSize', [54, 35]);
         e.get('target').options.set('iconImageOffset', [-27, -17]);
@@ -257,6 +260,23 @@ function init() {
         console.log(clickMarker);
       });
 
+      quikText.addEventListener('click', function () {
+        switchElement.classList.add('quik-active');
+        switchElement.classList.remove('cheap-active');
+        if (elem.DeliveryTime == 0) {
+          mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}-blue.svg`);
+        }
+
+      })
+      cheapText.addEventListener('click', function () {
+        switchElement.classList.remove('quik-active');
+        switchElement.classList.add('cheap-active');
+        if (elem.DeliveryCost == 300) {
+          mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}-blue.svg`);
+          console.log(elem.DeliveryCost);
+        }
+
+      })
 
       //Удаление розовой клизмы по клику на ПВЗ в курьерской доставке  
       mark.events.add('click', function (e) {
