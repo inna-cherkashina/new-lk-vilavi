@@ -229,13 +229,15 @@ function init() {
       }
       );
       myMap.geoObjects.add(mark);
-      let markIconImgHref = mark.options._options.iconImageHref;
+      
       let clickMarker = false;
       //Изменение размера метки при наведении на неё
       mark.events.add('mouseenter', function (e) {
           e.get('target').options.set('iconImageSize', [54, 35]);
           e.get('target').options.set('iconImageOffset', [-27, -17]);
           e.get('target').options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}-coral.svg`);
+          
+ 
       })
         .add('mouseleave', function (e) {
           if (clickMarker == false) {
@@ -248,70 +250,24 @@ function init() {
             e.get('target').options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}-coral.svg`);
           }
         });
-
+           
       mark.events.add('click', function (e) {
+      // смена цвета метки по клику на неё  
         clickMarker = true;
         e.get('target').options.set('iconImageSize', [54, 35]);
         e.get('target').options.set('iconImageOffset', [-27, -17]);
         e.get('target').options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}-coral.svg`);
-        console.log(clickMarker);
-      });
+        // let markIconImgHref = mark.options._options.iconImageHref;
 
-      //^Фильтруем пункты выдачи быстро/дёшево START
-      if (elem.DeliveryTime < 5) {
-        mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}-blue.svg`);
-      }
-      else {
-        mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
-      }
-      quikText.addEventListener('click', function () {
-        mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
-        switchElement.classList.add('quik-active');
-        switchElement.classList.remove('cheap-active');
-        if (elem.DeliveryTime < 5) {
-          mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}-blue.svg`);
-        }
-        else {
-          mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
-        }
-
-      })
-      cheapText.addEventListener('click', function () {
-        mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
-        switchElement.classList.remove('quik-active');
-        switchElement.classList.add('cheap-active');
-        if (elem.DeliveryCost <= 200) {
-          mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}-blue.svg`);
-        }
-        else {
-          mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
-        }
-      });
-      //^Фильтруем пункты выдачи быстро/дёшево END
-
-      //Удаление розовой клизмы по клику на ПВЗ в курьерской доставке  
-      mark.events.add('click', function (e) {
+        //смена секций курьер и самовывоз START
         myMap.geoObjects.remove(myPlacemark);
         courierSidebar.classList.remove('courier-section--active');
         courierSidebar.classList.add('courier-section--disactive');
         deliverySidebar.classList.remove('courier-section--disactive');
-        deliverySidebar.classList.add('courier-section--active');
-      });
+        deliverySidebar.classList.add('courier-section--active'); 
+        //смена секций курьер и самовывоз END
 
-      //Вывод  списка ПВЗ
-      createDeliveryPoint(elem.DeliveryCompany, elem.Street, elem.House, elem.City, elem.DeliveryCost, elem.DeliveryTime, elem.WorkTime);
-      //^ Если доставка не сегодня, то флаг "забрать сегодня" не отсвечивает START 
-      let flags = document.querySelectorAll('.flag');
-      if (elem.DeliveryTime != 0) {
-        flags.forEach(function (elem) {
-          elem.style.display = "none"
-        });
-      }
-      //^ Если доставка не сегодня, то флаг "забрать сегодня" не отсвечивает END 
-
-
-      //^ Возникновение блока с информацией о ПВЗ по клику на маркер на карте START 
-      mark.events.add('click', function () {
+        //Возникновение блока с информацией о ПВЗ по клику на маркер на карте START 
         let deleteBlock = document.querySelectorAll('.goods-delivery-point__item');
         deleteBlock.forEach(function (item) {
           if (item.classList.contains('high-info-block')) {
@@ -329,8 +285,58 @@ function init() {
         infoBlock.addEventListener('click', function () {
           infoBlock.remove();
         })
-      })
-      //^ Возникновение блока с информацией о ПВЗ по клику на маркер на карте END  
+        //Возникновение блока с информацией о ПВЗ по клику на маркер на карте END          
+
+      });
+
+
+      //^Фильтруем пункты выдачи быстро/дёшево START
+      // if (elem.DeliveryTime < 5) {
+      //   mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}-blue.svg`);
+      // }
+      // else {
+      //   mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
+      // }
+      // quikText.addEventListener('click', function () {
+      //   mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
+      //   switchElement.classList.add('quik-active');
+      //   switchElement.classList.remove('cheap-active');
+      //   if (elem.DeliveryTime < 5) {
+      //     mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}-blue.svg`);
+      //   }
+      //   else {
+      //     mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
+      //   }
+
+      // });
+      // cheapText.addEventListener('click', function () {
+      //   mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
+      //   switchElement.classList.remove('quik-active');
+      //   switchElement.classList.add('cheap-active');
+      //   if (elem.DeliveryCost <= 200) {
+      //     mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}-blue.svg`);
+      //   }
+      //   else {
+      //     mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
+      //   }
+      // });
+      //^Фильтруем пункты выдачи быстро/дёшево END
+
+      //Удаление розовой клизмы по клику на ПВЗ в курьерской доставке  
+
+
+      //Вывод  списка ПВЗ
+
+      createDeliveryPoint(elem.DeliveryCompany, elem.Street, elem.House, elem.City, elem.DeliveryCost, elem.DeliveryTime, elem.WorkTime);
+      //^ Если доставка не сегодня, то флаг "забрать сегодня" не отсвечивает START 
+      let flags = document.querySelectorAll('.flag');
+      if (elem.DeliveryTime != 0) {
+        flags.forEach(function (elem) {
+          elem.style.display = "none"
+        });
+      }
+      //^ Если доставка не сегодня, то флаг "забрать сегодня" не отсвечивает END 
+
     });
 
 
