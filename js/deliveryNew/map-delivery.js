@@ -306,35 +306,35 @@ function init() {
 
 
       //^Фильтруем пункты выдачи быстро/дёшево START
-      if (elem.DeliveryTime < 5) {
-        mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}-blue.svg`);
-      }
-      else {
-        mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
-      }
-      quikText.addEventListener('click', function () {
-        mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
-        switchElement.classList.add('quik-active');
-        switchElement.classList.remove('cheap-active');
-        if (elem.DeliveryTime < 5) {
-          mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}-blue.svg`);
-        }
-        else {
-          mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
-        }
+      // if (elem.DeliveryTime < 5) {
+      //   mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}-blue.svg`);
+      // }
+      // else {
+      //   mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
+      // }
+      // quikText.addEventListener('click', function () {
+      //   mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
+      //   switchElement.classList.add('quik-active');
+      //   switchElement.classList.remove('cheap-active');
+      //   if (elem.DeliveryTime < 5) {
+      //     mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}-blue.svg`);
+      //   }
+      //   else {
+      //     mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
+      //   }
 
-      });
-      cheapText.addEventListener('click', function () {
-        mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
-        switchElement.classList.remove('quik-active');
-        switchElement.classList.add('cheap-active');
-        if (elem.DeliveryCost <= 200) {
-          mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}-blue.svg`);
-        }
-        else {
-          mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
-        }
-      });
+      // });
+      // cheapText.addEventListener('click', function () {
+      //   mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
+      //   switchElement.classList.remove('quik-active');
+      //   switchElement.classList.add('cheap-active');
+      //   if (elem.DeliveryCost <= 200) {
+      //     mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}-blue.svg`);
+      //   }
+      //   else {
+      //     mark.options.set('iconImageHref', `./images/DeliveryNew/icon-map/${elem.DeliveryCompany}.svg`);
+      //   }
+      // });
       //^Фильтруем пункты выдачи быстро/дёшево END
 
 
@@ -373,7 +373,7 @@ ymaps.ready(init);
 
 //^ Чёрная клизма, бегающая за курсором на карте START
 mapBox = document.getElementById("map")
-mapBox.onmousemove = function (e) {
+mapBox.addEventListener('mousemove', function (e) {
   img = document.querySelector(".black-klizma");
   if (e.clientY + img.clientHeight <= mapBox.offsetTop + mapBox.clientHeight) {
     img.style.top = e.clientY - 50 + "px";
@@ -381,7 +381,7 @@ mapBox.onmousemove = function (e) {
   if (e.clientX + img.clientWidth <= mapBox.offsetLeft + mapBox.clientWidth) {
     img.style.left = e.clientX - 15 + "px";
   }
-}
+})
 //^ Чёрная клизма, бегающая за курсором на карте END
 
 
